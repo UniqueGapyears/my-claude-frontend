@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About Us | Unique Gap Years</title>
+<meta name="description" content="Leading responsible travel for UK students — Nepal and Southern Africa adventures with Unique Gap Years.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,800;0,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+.site-nav.scrolled{background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.08);}
+.site-nav{background:#fff;border-bottom:1px solid #e4e4e4;}
+.nav-link{font-family:Rubik,sans-serif;font-size:.76rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#555;padding:.48rem .85rem;border-radius:50px;transition:all .25s;text-decoration:none;display:inline-block;}
+.nav-link:hover{color:#E8440A;background:rgba(232,68,10,.06);}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;}
+.nav-burger span{width:22px;height:2px;background:#333;border-radius:2px;}
+.nav-links.open{display:flex!important;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:#fff;padding:1.2rem;gap:.2rem;z-index:899;box-shadow:0 8px 24px rgba(0,0,0,.1);}
+@media(max-width:900px){
+  .nav-links{display:none!important;}
+  .nav-burger{display:flex!important;}
+  .nav-links.open{display:flex!important;}
+}
+body{padding-top:68px;}
+h1{font-family:Rubik,sans-serif;font-size:clamp(2.2rem,5vw,4.2rem);font-weight:900;line-height:1.15;color:#1a1a1a;}
+h2{font-family:Rubik,sans-serif;font-size:clamp(1.7rem,3vw,2.6rem);font-weight:800;color:#1a1a1a;}
+h3{font-family:Rubik,sans-serif;font-weight:700;color:#1a1a1a;}
+.orange{color:#E8440A;}
+.eyebrow{font-family:Rubik,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#E8440A;display:block;margin-bottom:.5rem;}
+.rule{width:40px;height:3px;background:#E8440A;border-radius:2px;margin:.7rem 0 1.5rem;}
+.tc .rule{margin:.7rem auto 1.5rem;}
+.lead{font-size:1.02rem;color:#666;line-height:1.82;max-width:640px;margin-bottom:2rem;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+.sec{padding:80px 0;}
+.sec-sm{padding:48px 0;}
+.bg-off{background:#fafafa;}
+.bg-cream{background:#fffaf3;}
+.btn{display:inline-block;font-family:Rubik,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.82rem 2rem;border-radius:50px;border:2px solid transparent;cursor:pointer;transition:all .25s;text-decoration:none;}
+.btn-orange{background:#E8440A;color:#fff;border-color:#E8440A;}
+.btn-orange:hover{background:#c93a08;transform:translateY(-2px);}
+.btn-outline{background:transparent;color:#E8440A;border-color:#E8440A;}
+.btn-outline:hover{background:#E8440A;color:#fff;}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+.card-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;}
+.info-card{background:#fff;border-radius:12px;padding:2rem 1.8rem;box-shadow:0 2px 16px rgba(0,0,0,.07);border:1px solid #e4e4e4;border-top:3px solid #E8440A;}
+.info-card h3{margin-bottom:.5rem;}
+.info-card p{font-size:.88rem;color:#666;line-height:1.75;}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.split-img{border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.13);}
+.split-img img,.split-img .si{width:100%;height:420px;object-fit:cover;background-size:cover;background-position:center;display:block;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.9rem;}
+.frow.full{grid-template-columns:1fr;}
+.fg{display:flex;flex-direction:column;gap:.25rem;}
+.fg label{font-size:.74rem;font-weight:600;color:#333;}
+.fg input,.fg select,.fg textarea{font-family:Inter,sans-serif;font-size:.89rem;color:#333;background:#fff;border:1.5px solid #e4e4e4;border-radius:6px;padding:.68rem .88rem;width:100%;outline:none;transition:border-color .25s;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:#E8440A;box-shadow:0 0 0 3px rgba(232,68,10,.1);}
+.fg textarea{resize:vertical;min-height:90px;}
+.sub-btn{width:100%;padding:.95rem;border:none;border-radius:50px;cursor:pointer;font-family:Rubik,sans-serif;font-size:.88rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#E8440A;color:#fff;transition:all .25s;margin-top:1.2rem;}
+.sub-btn:hover{background:#c93a08;transform:translateY(-1px);}
+.sub-btn:disabled{background:#999;cursor:not-allowed;transform:none;}
+.form-note{font-size:.72rem;color:#999;text-align:center;margin-top:.7rem;}
+.form-note a{color:#E8440A;}
+.success-wrap{display:none;text-align:center;padding:2.5rem;}
+.success-wrap h3{color:#2A6B3C;font-family:Rubik,sans-serif;margin-bottom:.5rem;}
+.success-wrap p{font-size:.9rem;color:#666;line-height:1.75;}
+@media(max-width:900px){
+  .card-grid{grid-template-columns:1fr 1fr;}
+  .card-grid-2{grid-template-columns:1fr;}
+  .split{grid-template-columns:1fr;gap:2rem;}
+  .split-img .si{height:260px;}
+  .frow{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .card-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<nav class="site-nav scrolled" id="siteNav">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo">Unique<em>Gap</em>Years</a>
+    <ul class="nav-links" id="navLinks" style="display:flex;"><li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="nepal.html" class="nav-link">Nepal</a></li>
+      <li><a href="zimzamza.html" class="nav-link">Africa</a></li>
+      <li><a href="about.html" class="nav-link" style="color:var(--orange);">About</a></li>
+      <li><a href="responsible.html" class="nav-link">Responsible Travel</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="index.html#book" class="nav-link" style="background:var(--orange);color:#fff;border-radius:50px;padding:.45rem 1.1rem;">Book Now</a></li></ul>
+    <div class="nav-burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<section style="background:#fff;padding:64px 0 0;">
+  <div class="wrap">
+    <div style="max-width:760px;">
+      <span class="eyebrow">About Us</span>
+      <h1>We Open Doors to the World's <span class="orange">Hidden Corners</span></h1>
+      <div class="rule"></div>
+      <p class="lead">Unique Gap Years is a leading and trusted travel company for those who seek to broaden their horizons through meaningful and adventurous experiences. Founded in Germany in 2026, we connect students and young travellers from the UK with authentic, responsible, and transformative journeys across Nepal, Zimbabwe, Zambia, and South Africa.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-off">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Our Story</span>
+        <h2>Built by Travellers, <span class="orange">for Travellers</span></h2>
+        <div class="rule"></div>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;margin-bottom:1rem;">Unique Gap Years was founded with a single belief: that transformative travel should be accessible to everyone — not just those with big budgets or industry connections. Too many students return from gap years having seen the surface of a country without ever truly understanding it.</p>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;margin-bottom:1rem;">We designed our programmes differently. Smaller groups. Local guides from the communities we visit. Homestays instead of hotels. Trails instead of tourist routes. And a genuine commitment to leaving every place we visit better than we found it.</p>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;">Our Southern Africa operations run in full partnership with ZimZamZa Adventures &amp; Exchange — specialists in ethical tourism across Zimbabwe, Zambia, and South Africa whose tagline we share: <em>"Three Countries. One Incredible Journey."</em></p>
+      </div>
+      <div class="split-img">
+        <div class="si" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=800&auto=format&fit=crop&q=80');"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="tc" style="text-align:center;margin-bottom:3rem;">
+      <span class="eyebrow">Our Mission &amp; Vision</span>
+      <h2>What We're <span class="orange">Here For</span></h2>
+      <div class="rule" style="margin:.7rem auto 1.5rem;"></div>
+    </div>
+    <div class="card-grid-2">
+      <div style="background:#fff;border-radius:12px;padding:2.2rem 2rem;border:1px solid #e4e4e4;box-shadow:0 2px 16px rgba(0,0,0,.07);border-left:4px solid #E8440A;">
+        <h3 style="margin-bottom:.7rem;">Our Mission</h3>
+        <p style="font-size:.95rem;color:#555;line-height:1.85;">To connect curious university students from the UK with the hidden corners of Nepal and Southern Africa through authentic, responsible, and transformative travel experiences — fostering cultural exchange, environmental awareness, and a spirit of adventure that empowers young travellers to engage deeply with the world's people, wildlife, and heritage.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:2.2rem 2rem;border:1px solid #e4e4e4;box-shadow:0 2px 16px rgba(0,0,0,.07);border-left:4px solid #2A6B3C;">
+        <h3 style="margin-bottom:.7rem;">Our Vision</h3>
+        <p style="font-size:.95rem;color:#555;line-height:1.85;">To become the leading and trusted travel partner for students and young travellers from the UK who seek to broaden their horizons — recognised for opening doors to the hidden corners of Nepal, Zimbabwe, Zambia, South Africa, and beyond, at every budget level, with uncompromising standards of safety, authenticity, and service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-off">
+  <div class="wrap">
+    <div class="tc" style="text-align:center;margin-bottom:3rem;">
+      <span class="eyebrow">What We Stand For</span>
+      <h2>Our <span class="orange">Values</span></h2>
+      <div class="rule" style="margin:.7rem auto 1.5rem;"></div>
+    </div>
+    <div class="card-grid">
+      <div class="info-card"><div style="font-size:2rem;margin-bottom:.8rem;">🔍</div><h3>Curiosity</h3><p>We believe the best travellers ask questions. Every experience is built to provoke genuine curiosity about the people, ecology, and history of the places we visit.</p></div>
+      <div class="info-card" style="border-top-color:#2A6B3C;"><div style="font-size:2rem;margin-bottom:.8rem;">🤲</div><h3>Authenticity</h3><p>No performances staged for tourists. We build long-term relationships with communities so our students encounter real daily life — not a curated version of it.</p></div>
+      <div class="info-card" style="border-top-color:#7B4A1E;"><div style="font-size:2rem;margin-bottom:.8rem;">⚖️</div><h3>Responsibility</h3><p>We take seriously the impact of bringing visitors to fragile ecosystems and communities. Every decision is made with long-term impact in mind — not short-term convenience.</p></div>
+      <div class="info-card" style="border-top-color:#1B5E8B;"><div style="font-size:2rem;margin-bottom:.8rem;">🌏</div><h3>Understanding</h3><p>Our goal is not just to show students the world — it is to help them understand it, carry it with them, and let it change how they think about everything.</p></div>
+      <div class="info-card" style="border-top-color:#C5831A;"><div style="font-size:2rem;margin-bottom:.8rem;">♻️</div><h3>Sustainability</h3><p>Environmental awareness is woven into every itinerary — from low-impact routes to plastic-free kit lists and leave-no-trace camping in remote areas.</p></div>
+      <div class="info-card" style="border-top-color:#2A6B3C;"><div style="font-size:2rem;margin-bottom:.8rem;">🤝</div><h3>Community First</h3><p>Tourism income belongs in local hands. We measure success by how much money stays in the communities we visit — and publish our rates on request.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-img">
+        <div class="si" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&auto=format&fit=crop&q=80');"></div>
+      </div>
+      <div>
+        <span class="eyebrow">ZimZamZa Partnership</span>
+        <h2>Our Southern Africa <span class="orange">Partner</span></h2>
+        <div class="rule"></div>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;margin-bottom:1rem;">Our Southern Africa operations are delivered in full partnership with <strong>ZimZamZa Adventures &amp; Exchange</strong> — specialists in ethical tourism across Zimbabwe, Zambia, and South Africa. They bring established networks of host families, local guides, NGO partners, and lodges.</p>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;margin-bottom:1.5rem;">ZimZamZa's commitment to community-owned tourism, local employment, and wildlife conservation aligns perfectly with our own — together we deliver experiences that are authentic, safe, and impactful.</p>
+        <div style="background:#f5ede4;border-radius:12px;padding:1.4rem 1.6rem;border-left:4px solid #7B4A1E;">
+          <p style="font-family:Rubik,sans-serif;font-size:1.1rem;font-weight:700;color:#7B4A1E;font-style:italic;">"Three Countries. One Incredible Journey."</p>
+          <p style="font-size:.82rem;color:#888;margin-top:.3rem;">— ZimZamZa Adventures &amp; Exchange tagline</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-off">
+  <div class="wrap">
+    <div class="tc" style="text-align:center;margin-bottom:3rem;">
+      <span class="eyebrow">UN Sustainable Development Goals</span>
+      <h2>Seven SDGs We <span class="orange">Support</span></h2>
+      <div class="rule" style="margin:.7rem auto 1.5rem;"></div>
+      <p class="lead" style="margin:0 auto 2.5rem;">Every programme we run is aligned with the United Nations Sustainable Development Goals — your journey creates lasting, measurable positive impact.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1.1rem;">
+      <div style="background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e4e4e4;border-top:3px solid #E8440A;text-align:center;"><div style="font-family:Rubik,sans-serif;font-size:2.2rem;font-weight:900;color:#E8440A;line-height:1;margin-bottom:.4rem;">4</div><div style="font-family:Rubik,sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a1a1a;margin-bottom:.3rem;">Quality Education</div><p style="font-size:.79rem;color:#666;">Teaching placements and youth leadership.</p></div>
+      <div style="background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e4e4e4;border-top:3px solid #2A6B3C;text-align:center;"><div style="font-family:Rubik,sans-serif;font-size:2.2rem;font-weight:900;color:#2A6B3C;line-height:1;margin-bottom:.4rem;">5</div><div style="font-family:Rubik,sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a1a1a;margin-bottom:.3rem;">Gender Equality</div><p style="font-size:.79rem;color:#666;">Women-led tourism businesses.</p></div>
+      <div style="background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e4e4e4;border-top:3px solid #C5831A;text-align:center;"><div style="font-family:Rubik,sans-serif;font-size:2.2rem;font-weight:900;color:#C5831A;line-height:1;margin-bottom:.4rem;">8</div><div style="font-family:Rubik,sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a1a1a;margin-bottom:.3rem;">Decent Work</div><p style="font-size:.79rem;color:#666;">Local employment and fair wages.</p></div>
+      <div style="background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e4e4e4;border-top:3px solid #1B5E8B;text-align:center;"><div style="font-family:Rubik,sans-serif;font-size:2.2rem;font-weight:900;color:#1B5E8B;line-height:1;margin-bottom:.4rem;">10</div><div style="font-family:Rubik,sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a1a1a;margin-bottom:.3rem;">Reduced Inequalities</div><p style="font-size:.79rem;color:#666;">Rural inclusion and cultural exchange.</p></div>
+      <div style="background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e4e4e4;border-top:3px solid #E8440A;text-align:center;"><div style="font-family:Rubik,sans-serif;font-size:2.2rem;font-weight:900;color:#E8440A;line-height:1;margin-bottom:.4rem;">13</div><div style="font-family:Rubik,sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a1a1a;margin-bottom:.3rem;">Climate Action</div><p style="font-size:.79rem;color:#666;">Carbon offsets and low-impact routes.</p></div>
+      <div style="background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e4e4e4;border-top:3px solid #2A6B3C;text-align:center;"><div style="font-family:Rubik,sans-serif;font-size:2.2rem;font-weight:900;color:#2A6B3C;line-height:1;margin-bottom:.4rem;">15</div><div style="font-family:Rubik,sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a1a1a;margin-bottom:.3rem;">Life on Land</div><p style="font-size:.79rem;color:#666;">Wildlife conservation partnerships.</p></div>
+      <div style="background:#fff;border-radius:10px;padding:1.3rem;box-shadow:0 2px 12px rgba(0,0,0,.06);border:1px solid #e4e4e4;border-top:3px solid #7B4A1E;text-align:center;"><div style="font-family:Rubik,sans-serif;font-size:2.2rem;font-weight:900;color:#7B4A1E;line-height:1;margin-bottom:.4rem;">17</div><div style="font-family:Rubik,sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#1a1a1a;margin-bottom:.3rem;">Partnerships</div><p style="font-size:.79rem;color:#666;">NGOs, schools, and conservation orgs.</p></div>
+    </div>
+  </div>
+</section>
+
+<div style="background:#E8440A;padding:64px 24px;text-align:center;">
+  <span style="font-family:Rubik,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);display:block;margin-bottom:.5rem;">Start Your Journey</span>
+  <h2 style="color:#fff;margin-bottom:1rem;">Ready to See the World <em>Differently?</em></h2>
+  <p style="color:rgba(255,255,255,.75);max-width:480px;margin:0 auto 2rem;font-size:1rem;">Browse our 23 tours across Nepal and Southern Africa — or contact Jack directly to design your perfect journey.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="nepal.html" class="btn" style="background:#fff;color:#E8440A;border-color:#fff;">Nepal Adventures</a>
+    <a href="zimzamza.html" class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.6);">Africa Adventures</a>
+  </div>
+</div>
+
+<footer class="site-footer" style="background:#1a1a1a;">
+  <div style="max-width:1180px;margin:0 auto;padding:40px 24px 0;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;">
+    <div>
+      <a href="index.html" style="font-family:Rubik,sans-serif;font-size:1.2rem;font-weight:900;color:#fff;display:inline-block;margin-bottom:.9rem;">Unique<span style="color:#E8440A;">Gap</span>Years</a>
+      <p style="font-size:.84rem;color:rgba(255,255,255,.45);line-height:1.75;max-width:255px;">Authentic, affordable, transformative travel for students and young explorers. HQ Germany. Est. 2026.</p>
+      <a href="mailto:jack.anderson@uniquegapyears.com" style="display:inline-block;margin-top:.7rem;color:#C5831A;font-size:.84rem;">jack.anderson@uniquegapyears.com</a>
+    </div>
+    <div>
+      <h5 style="font-family:Rubik,sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.85rem;">Destinations</h5>
+      <ul style="list-style:none;">
+        <li style="margin-bottom:.42rem;"><a href="nepal.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Nepal Adventures</a></li>
+        <li style="margin-bottom:.42rem;"><a href="zimzamza.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Zimbabwe &amp; Africa</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 style="font-family:Rubik,sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.85rem;">Company</h5>
+      <ul style="list-style:none;">
+        <li style="margin-bottom:.42rem;"><a href="about.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">About Us</a></li>
+        <li style="margin-bottom:.42rem;"><a href="responsible.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Responsible Travel</a></li>
+        <li style="margin-bottom:.42rem;"><a href="contact.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Contact Jack</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 style="font-family:Rubik,sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.85rem;">Legal</h5>
+      <ul style="list-style:none;">
+        <li style="margin-bottom:.42rem;"><a href="terms.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Terms &amp; Conditions</a></li>
+        <li style="margin-bottom:.42rem;"><a href="cancellation.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Cancellation Policy</a></li>
+        <li style="margin-bottom:.42rem;"><a href="privacy.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.07);margin-top:2.5rem;padding:1.2rem 24px;max-width:1180px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <p style="font-size:.74rem;color:rgba(255,255,255,.26);">&copy; 2026 Unique Gap Years. All rights reserved.</p>
+    <div style="display:flex;gap:1.2rem;">
+      <a href="privacy.html" style="font-size:.74rem;color:rgba(255,255,255,.26);">Privacy</a>
+      <a href="terms.html" style="font-size:.74rem;color:rgba(255,255,255,.26);">Terms</a>
+    </div>
+  </div>
+</footer>
+<script>
+
+window.addEventListener('scroll',()=>document.getElementById('siteNav').classList.toggle('scrolled',scrollY>50));
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+
+
+</script>
+</body></html>

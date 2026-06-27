@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsible Travel | Unique Gap Years</title>
+<meta name="description" content="How Unique Gap Years ensures every programme benefits communities, protects wildlife, and leaves places better than we found them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,800;0,900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+.site-nav.scrolled{background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.08);}
+.site-nav{background:#fff;border-bottom:1px solid #e4e4e4;}
+.nav-link{font-family:Rubik,sans-serif;font-size:.76rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#555;padding:.48rem .85rem;border-radius:50px;transition:all .25s;text-decoration:none;display:inline-block;}
+.nav-link:hover{color:#E8440A;background:rgba(232,68,10,.06);}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;}
+.nav-burger span{width:22px;height:2px;background:#333;border-radius:2px;}
+.nav-links.open{display:flex!important;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:#fff;padding:1.2rem;gap:.2rem;z-index:899;box-shadow:0 8px 24px rgba(0,0,0,.1);}
+@media(max-width:900px){
+  .nav-links{display:none!important;}
+  .nav-burger{display:flex!important;}
+  .nav-links.open{display:flex!important;}
+}
+body{padding-top:68px;}
+h1{font-family:Rubik,sans-serif;font-size:clamp(2.2rem,5vw,4.2rem);font-weight:900;line-height:1.15;color:#1a1a1a;}
+h2{font-family:Rubik,sans-serif;font-size:clamp(1.7rem,3vw,2.6rem);font-weight:800;color:#1a1a1a;}
+h3{font-family:Rubik,sans-serif;font-weight:700;color:#1a1a1a;}
+.orange{color:#E8440A;}
+.eyebrow{font-family:Rubik,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#E8440A;display:block;margin-bottom:.5rem;}
+.rule{width:40px;height:3px;background:#E8440A;border-radius:2px;margin:.7rem 0 1.5rem;}
+.tc .rule{margin:.7rem auto 1.5rem;}
+.lead{font-size:1.02rem;color:#666;line-height:1.82;max-width:640px;margin-bottom:2rem;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+.sec{padding:80px 0;}
+.sec-sm{padding:48px 0;}
+.bg-off{background:#fafafa;}
+.bg-cream{background:#fffaf3;}
+.btn{display:inline-block;font-family:Rubik,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.82rem 2rem;border-radius:50px;border:2px solid transparent;cursor:pointer;transition:all .25s;text-decoration:none;}
+.btn-orange{background:#E8440A;color:#fff;border-color:#E8440A;}
+.btn-orange:hover{background:#c93a08;transform:translateY(-2px);}
+.btn-outline{background:transparent;color:#E8440A;border-color:#E8440A;}
+.btn-outline:hover{background:#E8440A;color:#fff;}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+.card-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;}
+.info-card{background:#fff;border-radius:12px;padding:2rem 1.8rem;box-shadow:0 2px 16px rgba(0,0,0,.07);border:1px solid #e4e4e4;border-top:3px solid #E8440A;}
+.info-card h3{margin-bottom:.5rem;}
+.info-card p{font-size:.88rem;color:#666;line-height:1.75;}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.split-img{border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.13);}
+.split-img img,.split-img .si{width:100%;height:420px;object-fit:cover;background-size:cover;background-position:center;display:block;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.9rem;}
+.frow.full{grid-template-columns:1fr;}
+.fg{display:flex;flex-direction:column;gap:.25rem;}
+.fg label{font-size:.74rem;font-weight:600;color:#333;}
+.fg input,.fg select,.fg textarea{font-family:Inter,sans-serif;font-size:.89rem;color:#333;background:#fff;border:1.5px solid #e4e4e4;border-radius:6px;padding:.68rem .88rem;width:100%;outline:none;transition:border-color .25s;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:#E8440A;box-shadow:0 0 0 3px rgba(232,68,10,.1);}
+.fg textarea{resize:vertical;min-height:90px;}
+.sub-btn{width:100%;padding:.95rem;border:none;border-radius:50px;cursor:pointer;font-family:Rubik,sans-serif;font-size:.88rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#E8440A;color:#fff;transition:all .25s;margin-top:1.2rem;}
+.sub-btn:hover{background:#c93a08;transform:translateY(-1px);}
+.sub-btn:disabled{background:#999;cursor:not-allowed;transform:none;}
+.form-note{font-size:.72rem;color:#999;text-align:center;margin-top:.7rem;}
+.form-note a{color:#E8440A;}
+.success-wrap{display:none;text-align:center;padding:2.5rem;}
+.success-wrap h3{color:#2A6B3C;font-family:Rubik,sans-serif;margin-bottom:.5rem;}
+.success-wrap p{font-size:.9rem;color:#666;line-height:1.75;}
+@media(max-width:900px){
+  .card-grid{grid-template-columns:1fr 1fr;}
+  .card-grid-2{grid-template-columns:1fr;}
+  .split{grid-template-columns:1fr;gap:2rem;}
+  .split-img .si{height:260px;}
+  .frow{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .card-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<nav class="site-nav scrolled" id="siteNav">
+  <div class="nav-wrap">
+    <a href="index.html" class="nav-logo">Unique<em>Gap</em>Years</a>
+    <ul class="nav-links" id="navLinks" style="display:flex;"><li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="nepal.html" class="nav-link">Nepal</a></li>
+      <li><a href="zimzamza.html" class="nav-link">Africa</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="responsible.html" class="nav-link" style="color:var(--orange);">Responsible Travel</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="index.html#book" class="nav-link" style="background:var(--orange);color:#fff;border-radius:50px;padding:.45rem 1.1rem;">Book Now</a></li></ul>
+    <div class="nav-burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<section style="background:#fff;padding:64px 0 0;">
+  <div class="wrap">
+    <div style="max-width:760px;">
+      <span class="eyebrow">Responsible Travel</span>
+      <h1>We Leave Places <span class="orange">Better</span></h1>
+      <div class="rule"></div>
+      <p class="lead">Responsible travel is not a marketing add-on for us — it is the foundation every single programme is built on. Here is exactly how we do it, and what it means for you and for the communities you visit.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-off">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Community First</span>
+        <h2>Tourism Income Stays <span class="orange">Where It Should</span></h2>
+        <div class="rule"></div>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;margin-bottom:1rem;">Every guesthouse, lodge, and homestay we use is either community-owned or run by local families. We do not work with international hotel chains or outside operators whose profits leave the country.</p>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;margin-bottom:1rem;">On request, we publish a full breakdown of where your programme fee goes — what percentage reaches the communities we visit, what goes to local guides and porters, and what covers our operating costs.</p>
+        <ul style="list-style:none;margin-top:1rem;">
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#E8440A;font-weight:700;flex-shrink:0;">→</span>Community-owned accommodation prioritised on every itinerary</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#E8440A;font-weight:700;flex-shrink:0;">→</span>Local restaurants and food suppliers only</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#E8440A;font-weight:700;flex-shrink:0;">→</span>Local transport operators, not international transfer companies</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;font-size:.91rem;"><span style="color:#E8440A;font-weight:700;flex-shrink:0;">→</span>Craft and souvenir purchases directed to local artisan markets</li>
+        </ul>
+      </div>
+      <div class="split-img">
+        <div class="si" style="background-image:url('https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=800&auto=format&fit=crop&q=80');"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="tc" style="text-align:center;margin-bottom:3rem;">
+      <span class="eyebrow">Our Commitments</span>
+      <h2>Six Pillars of <span class="orange">Responsible Tourism</span></h2>
+      <div class="rule" style="margin:.7rem auto 1.5rem;"></div>
+    </div>
+    <div class="card-grid">
+      <div class="info-card"><div style="font-size:2rem;margin-bottom:.8rem;">🏡</div><h3>Community Lodges</h3><p>We prioritise community-owned accommodation on every route. Tourism income should stay in the village — not in international hotel group accounts.</p></div>
+      <div class="info-card" style="border-top-color:#7B4A1E;"><div style="font-size:2rem;margin-bottom:.8rem;">👨‍🏫</div><h3>Local Expert Guides</h3><p>Every guide is a trained local from the same region we visit. No outside operators, no city guides bussed in. The people who know the land best should be the ones showing it to you.</p></div>
+      <div class="info-card" style="border-top-color:#2A6B3C;"><div style="font-size:2rem;margin-bottom:.8rem;">💷</div><h3>Fair Pay — Always</h3><p>Every porter, cook, guide, and host is paid above the local living wage. We publish our pay rates on request. Tipping is encouraged but never a substitute for fair pay.</p></div>
+      <div class="info-card" style="border-top-color:#1B5E8B;"><div style="font-size:2rem;margin-bottom:.8rem;">🌱</div><h3>Low-Impact Routes</h3><p>We avoid overcrowded trails, use clean transport where available, carry all waste out of remote areas, and brief students on leave-no-trace principles before every trek.</p></div>
+      <div class="info-card" style="border-top-color:#C5831A;"><div style="font-size:2rem;margin-bottom:.8rem;">📖</div><h3>Cultural Briefings</h3><p>Students receive in-depth cultural and historical briefings before every experience — so their engagement with communities is respectful, informed, and genuinely welcome.</p></div>
+      <div class="info-card" style="border-top-color:#2A6B3C;"><div style="font-size:2rem;margin-bottom:.8rem;">🦁</div><h3>Wildlife Ethics</h3><p>No elephant rides. No captive animal encounters of any kind. Wildlife experiences are observation-only, with trained naturalists, from appropriate distances.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec bg-off">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-img">
+        <div class="si" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop&q=80');"></div>
+      </div>
+      <div>
+        <span class="eyebrow">Environmental Commitment</span>
+        <h2>Treading <span class="orange">Lightly</span></h2>
+        <div class="rule"></div>
+        <p style="font-size:.97rem;color:#555;line-height:1.85;margin-bottom:1rem;">Nepal's mountain ecosystems and Southern Africa's wildlife habitats are among the world's most fragile — and most threatened. We take our environmental responsibility seriously.</p>
+        <ul style="list-style:none;margin-top:1rem;">
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#2A6B3C;font-weight:700;flex-shrink:0;">✓</span>Carbon offset contribution included in every programme fee</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#2A6B3C;font-weight:700;flex-shrink:0;">✓</span>Single-use plastic kit list sent to all travellers before departure</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#2A6B3C;font-weight:700;flex-shrink:0;">✓</span>All waste carried out from remote trekking and camping zones</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#2A6B3C;font-weight:700;flex-shrink:0;">✓</span>Low-impact trail selection — avoiding overcrowded routes</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;border-bottom:1px solid #e4e4e4;font-size:.91rem;"><span style="color:#2A6B3C;font-weight:700;flex-shrink:0;">✓</span>Eco-briefing included in all itineraries covering local conservation</li>
+          <li style="display:flex;align-items:flex-start;gap:.7rem;padding:.7rem 0;font-size:.91rem;"><span style="color:#2A6B3C;font-weight:700;flex-shrink:0;">✓</span>Anti-poaching support partnerships in Botswana and Zimbabwe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="tc" style="text-align:center;margin-bottom:3rem;">
+      <span class="eyebrow">What We Don't Do</span>
+      <h2>Lines We <span class="orange">Don't Cross</span></h2>
+      <div class="rule" style="margin:.7rem auto 1.5rem;"></div>
+      <p class="lead" style="margin:0 auto 2.5rem;">Responsible tourism also means knowing what not to do. These are absolute policies — not guidelines.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;max-width:860px;margin:0 auto;">
+      <div style="background:#fff5f5;border:1.5px solid #fcc;border-radius:12px;padding:1.4rem 1.6rem;">
+        <div style="font-size:1.4rem;margin-bottom:.5rem;">🐘</div>
+        <h4 style="font-family:Rubik,sans-serif;margin-bottom:.4rem;font-size:.95rem;">No Elephant Rides</h4>
+        <p style="font-size:.84rem;color:#666;line-height:1.7;">Ever. No exceptions. We visit elephant sanctuaries for ethical observation only.</p>
+      </div>
+      <div style="background:#fff5f5;border:1.5px solid #fcc;border-radius:12px;padding:1.4rem 1.6rem;">
+        <div style="font-size:1.4rem;margin-bottom:.5rem;">📸</div>
+        <h4 style="font-family:Rubik,sans-serif;margin-bottom:.4rem;font-size:.95rem;">No Poverty Tourism</h4>
+        <p style="font-size:.84rem;color:#666;line-height:1.7;">We never take travellers to communities as spectators. Every community visit involves genuine reciprocal exchange.</p>
+      </div>
+      <div style="background:#fff5f5;border:1.5px solid #fcc;border-radius:12px;padding:1.4rem 1.6rem;">
+        <div style="font-size:1.4rem;margin-bottom:.5rem;">🔒</div>
+        <h4 style="font-family:Rubik,sans-serif;margin-bottom:.4rem;font-size:.95rem;">No Unvetted Orphanages</h4>
+        <p style="font-size:.84rem;color:#666;line-height:1.7;">We do not place volunteers in orphanages without rigorous vetting. Orphanage tourism causes significant harm and we have zero involvement.</p>
+      </div>
+      <div style="background:#fff5f5;border:1.5px solid #fcc;border-radius:12px;padding:1.4rem 1.6rem;">
+        <div style="font-size:1.4rem;margin-bottom:.5rem;">🌿</div>
+        <h4 style="font-family:Rubik,sans-serif;margin-bottom:.4rem;font-size:.95rem;">No Single-Use Plastics</h4>
+        <p style="font-size:.84rem;color:#666;line-height:1.7;">Our kit lists are plastic-free. We carry reusable water bottles, filters, and bags on all treks and provide purification tablets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div style="background:#2A6B3C;padding:64px 24px;text-align:center;">
+  <span style="font-family:Rubik,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);display:block;margin-bottom:.5rem;">Travel With Us</span>
+  <h2 style="color:#fff;margin-bottom:1rem;">Every Journey Creates <em>Lasting Impact</em></h2>
+  <p style="color:rgba(255,255,255,.75);max-width:480px;margin:0 auto 2rem;font-size:1rem;">Browse our responsible travel programmes across Nepal and Southern Africa.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="nepal.html" class="btn" style="background:#fff;color:#2A6B3C;border-color:#fff;">Nepal Adventures</a>
+    <a href="zimzamza.html" class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.6);">Africa Adventures</a>
+  </div>
+</div>
+
+<footer class="site-footer" style="background:#1a1a1a;">
+  <div style="max-width:1180px;margin:0 auto;padding:40px 24px 0;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;">
+    <div>
+      <a href="index.html" style="font-family:Rubik,sans-serif;font-size:1.2rem;font-weight:900;color:#fff;display:inline-block;margin-bottom:.9rem;">Unique<span style="color:#E8440A;">Gap</span>Years</a>
+      <p style="font-size:.84rem;color:rgba(255,255,255,.45);line-height:1.75;max-width:255px;">Authentic, affordable, transformative travel for students and young explorers. HQ Germany. Est. 2026.</p>
+      <a href="mailto:jack.anderson@uniquegapyears.com" style="display:inline-block;margin-top:.7rem;color:#C5831A;font-size:.84rem;">jack.anderson@uniquegapyears.com</a>
+    </div>
+    <div>
+      <h5 style="font-family:Rubik,sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.85rem;">Destinations</h5>
+      <ul style="list-style:none;">
+        <li style="margin-bottom:.42rem;"><a href="nepal.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Nepal Adventures</a></li>
+        <li style="margin-bottom:.42rem;"><a href="zimzamza.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Zimbabwe &amp; Africa</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 style="font-family:Rubik,sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.85rem;">Company</h5>
+      <ul style="list-style:none;">
+        <li style="margin-bottom:.42rem;"><a href="about.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">About Us</a></li>
+        <li style="margin-bottom:.42rem;"><a href="responsible.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Responsible Travel</a></li>
+        <li style="margin-bottom:.42rem;"><a href="contact.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Contact Jack</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 style="font-family:Rubik,sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.85rem;">Legal</h5>
+      <ul style="list-style:none;">
+        <li style="margin-bottom:.42rem;"><a href="terms.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Terms &amp; Conditions</a></li>
+        <li style="margin-bottom:.42rem;"><a href="cancellation.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Cancellation Policy</a></li>
+        <li style="margin-bottom:.42rem;"><a href="privacy.html" style="font-size:.84rem;color:rgba(255,255,255,.42);">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.07);margin-top:2.5rem;padding:1.2rem 24px;max-width:1180px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <p style="font-size:.74rem;color:rgba(255,255,255,.26);">&copy; 2026 Unique Gap Years. All rights reserved.</p>
+    <div style="display:flex;gap:1.2rem;">
+      <a href="privacy.html" style="font-size:.74rem;color:rgba(255,255,255,.26);">Privacy</a>
+      <a href="terms.html" style="font-size:.74rem;color:rgba(255,255,255,.26);">Terms</a>
+    </div>
+  </div>
+</footer>
+<script>
+
+window.addEventListener('scroll',()=>document.getElementById('siteNav').classList.toggle('scrolled',scrollY>50));
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+
+
+</script>
+</body></html>
