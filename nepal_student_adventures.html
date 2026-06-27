@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nepal Adventures – Discover the Himalayas to Lumbini | Unique Gap Years</title>
+<meta name="description" content="Your go-to partner for affordable, transformative Nepal adventures — from the Himalayas to Chitwan, Mustang, Lumbini and beyond. Built for UK students and young travellers of all budgets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#ff4d00;--primary-h:#e54500;
+  --secondary:#5b320d;--secondary-h:#3e2008;
+  --accent:#111;--text:#555;--light:#888;
+  --border:#e8e8e8;--bg:#fff;--bg-light:#f8f5f0;
+  --gold:#c8891a;--leaf:#2d6a3f;--sky:#2a6fa8;
+  --himalaya:#1a3a5c;--jungle:#1e4d2b;--saffron:#e8890c;
+  --font-h:"Rubik",sans-serif;--font-b:"Inter",sans-serif;
+  --r:10px;--rs:5px;--rp:50px;
+  --shadow:0 4px 24px rgba(0,0,0,.08);--shadow-lg:0 8px 40px rgba(0,0,0,.16);
+  --tr:.3s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;transition:color var(--tr);}
+::selection{background:var(--primary);color:#fff;}
+h1,h2,h3,h4{font-family:var(--font-h);color:var(--accent);line-height:1.15;font-weight:800;}
+h1{font-size:clamp(2.6rem,6vw,5.8rem);}
+h2{font-size:clamp(1.9rem,3.5vw,3.1rem);}
+h3{font-size:1.2rem;}
+
+/* ── UTILS ── */
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+.section{padding:88px 0;}
+.section--dark{background:var(--himalaya);}
+.section--dark h2,.section--dark h3{color:#fff;}
+.section--jungle{background:var(--jungle);}
+.section--jungle h2,.section--jungle h3{color:#fff;}
+.section--light{background:var(--bg-light);}
+.section--cream{background:#fffaf3;}
+.eyebrow{font-family:var(--font-h);font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--primary);margin-bottom:.6rem;display:block;}
+.section--dark .eyebrow{color:var(--gold);}
+.section--jungle .eyebrow{color:#a8e6b5;}
+.lead{font-size:1.05rem;color:var(--text);max-width:640px;line-height:1.85;margin-bottom:2.4rem;}
+.section--dark .lead,.section--jungle .lead{color:rgba(255,255,255,.65);}
+.tc{text-align:center;}.tc .lead{margin:0 auto 2.4rem;}
+.divider{width:48px;height:3px;background:var(--primary);border-radius:2px;margin:1rem 0 1.6rem;}
+.tc .divider{margin:1rem auto 1.6rem;}
+
+/* ── BUTTONS ── */
+.btn{display:inline-block;font-family:var(--font-h);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.88rem 2.1rem;border-radius:var(--rp);border:none;cursor:pointer;transition:all var(--tr);line-height:1;}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-primary:hover{background:var(--primary-h);transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,77,0,.35);}
+.btn-secondary{background:var(--secondary);color:#fff;}
+.btn-secondary:hover{background:var(--secondary-h);transform:translateY(-2px);}
+.btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary);}
+.btn-outline:hover{background:var(--primary);color:#fff;}
+.btn-outline-w{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55);}
+.btn-outline-w:hover{background:#fff;color:var(--primary);}
+.btn-gold{background:var(--gold);color:#fff;}
+.btn-gold:hover{background:#b07818;transform:translateY(-2px);}
+.btn-sm{padding:.58rem 1.3rem;font-size:.74rem;}
+
+/* ── NAV ── */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:900;transition:background var(--tr),box-shadow var(--tr);}
+.site-header.scrolled{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.1);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:70px;max-width:1180px;margin:0 auto;}
+.nav-logo{font-family:var(--font-h);font-size:1.25rem;font-weight:900;color:#fff;letter-spacing:-.01em;}
+.nav-logo span{color:var(--primary);}
+.site-header.scrolled .nav-logo{color:var(--accent);}
+.nav-list{display:flex;align-items:center;gap:.15rem;list-style:none;}
+.nav-link{font-family:var(--font-h);font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.85);padding:.5rem .85rem;border-radius:var(--rp);transition:all var(--tr);}
+.site-header.scrolled .nav-link{color:var(--accent);}
+.nav-link:hover{background:rgba(255,255,255,.12);color:#fff;}
+.site-header.scrolled .nav-link:hover{color:var(--primary);background:rgba(255,77,0,.07);}
+.nav-cta{background:var(--primary)!important;color:#fff!important;}
+.nav-cta:hover{background:var(--primary-h)!important;}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;}
+.nav-burger span{width:24px;height:2px;background:#fff;border-radius:2px;transition:var(--tr);}
+.site-header.scrolled .nav-burger span{background:var(--accent);}
+
+/* ── HERO ── */
+.hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1800&auto=format&fit=crop&q=85") center 25%/cover;}
+.hero-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,40,.95) 0%,rgba(10,20,40,.55) 45%,rgba(10,20,40,.15) 100%);}
+.hero-content{position:relative;z-index:2;padding:100px 24px 72px;max-width:1180px;margin:0 auto;width:100%;}
+.hero-breadcrumb{display:flex;align-items:center;gap:.5rem;font-family:var(--font-h);font-size:.68rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1.4rem;}
+.hero-breadcrumb a{color:rgba(255,255,255,.45);transition:color var(--tr);}
+.hero-breadcrumb a:hover{color:var(--gold);}
+.hero-breadcrumb span{color:var(--gold);}
+.hero h1{color:#fff;max-width:880px;margin-bottom:1.2rem;text-shadow:0 2px 24px rgba(0,0,0,.4);}
+.hero h1 em{color:var(--primary);font-style:italic;}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.72);max-width:580px;line-height:1.78;margin-bottom:2rem;font-weight:300;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.8rem;}
+.hero-trust{display:flex;align-items:center;gap:1.8rem;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:rgba(255,255,255,.55);font-weight:500;}
+.trust-icon{font-size:1.1rem;}
+.scroll-cue{position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.4rem;font-family:var(--font-h);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.32);}
+.scroll-cue::after{content:"";width:1px;height:44px;background:linear-gradient(to bottom,rgba(255,77,0,.7),transparent);animation:sp 2s ease-in-out infinite;}
+@keyframes sp{0%,100%{opacity:0;transform:scaleY(.3);}50%{opacity:1;transform:scaleY(1);}}
+
+/* ── MISSION BAND ── */
+.mission-band{background:var(--primary);padding:56px 0;}
+.mission-inner{display:grid;grid-template-columns:1fr 2fr;gap:4rem;align-items:center;}
+.mission-label{font-family:var(--font-h);font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.55);}
+.mission-heading{font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:#fff;line-height:1.2;margin-top:.5rem;}
+.mission-text{font-size:1rem;color:rgba(255,255,255,.82);line-height:1.85;}
+.mission-text strong{color:#fff;}
+
+/* ── STAT STRIP ── */
+.stat-strip{background:var(--accent);padding:0;}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+.stat-item{padding:2rem 1.5rem;border-right:1px solid rgba(255,255,255,.08);text-align:center;}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:var(--font-h);font-size:clamp(2rem,3.5vw,3rem);font-weight:900;color:var(--primary);line-height:1;margin-bottom:.3rem;}
+.stat-lbl{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+
+/* ── WHY US ── */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.why-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:2rem 1.8rem;border-top:4px solid var(--border);transition:all var(--tr);}
+.why-card:hover{border-top-color:var(--primary);box-shadow:var(--shadow-lg);transform:translateY(-4px);}
+.why-icon{font-size:2.2rem;margin-bottom:1rem;}
+.why-card h3{font-size:1.05rem;font-weight:800;color:var(--accent);margin-bottom:.5rem;}
+.why-card p{font-size:.87rem;color:var(--text);line-height:1.72;}
+
+/* ── EXPERIENCE CARDS ── */
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.6rem;}
+.exp-card{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--tr),box-shadow var(--tr);cursor:pointer;background:#fff;border:1px solid var(--border);}
+.exp-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.exp-media{height:220px;position:relative;overflow:hidden;}
+.exp-bg{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .5s ease;}
+.exp-card:hover .exp-bg{transform:scale(1.07);}
+.exp-badge{position:absolute;top:12px;left:12px;font-family:var(--font-h);font-size:.63rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .75rem;border-radius:var(--rp);}
+.badge-adventure{background:var(--primary);color:#fff;}
+.badge-culture{background:var(--secondary);color:#fff;}
+.badge-wildlife{background:var(--jungle);color:#fff;}
+.badge-trek{background:var(--himalaya);color:#fff;}
+.badge-hidden{background:var(--gold);color:#fff;}
+.exp-dur{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,.6);color:#fff;font-family:var(--font-h);font-size:.68rem;font-weight:600;padding:.26rem .65rem;border-radius:var(--rp);backdrop-filter:blur(4px);}
+.exp-body{padding:1.3rem 1.4rem 1.5rem;}
+.exp-body h3{font-size:1.05rem;font-weight:800;color:var(--accent);margin-bottom:.35rem;}
+.exp-body p{font-size:.84rem;color:var(--text);line-height:1.65;margin-bottom:.9rem;}
+.exp-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem;}
+.exp-tag{font-family:var(--font-h);font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--bg-light);color:var(--secondary);padding:.22rem .6rem;border-radius:var(--rp);border:1px solid var(--border);}
+.exp-price-row{display:flex;align-items:center;justify-content:space-between;padding-top:.9rem;border-top:1px solid var(--border);}
+.exp-price{font-family:var(--font-h);font-size:1.3rem;font-weight:900;color:var(--primary);}
+.exp-price small{font-family:var(--font-b);font-size:.68rem;color:var(--light);display:block;line-height:1;font-weight:400;}
+.exp-book{font-family:var(--font-h);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--primary);color:#fff;border:none;padding:.52rem 1.15rem;border-radius:var(--rp);cursor:pointer;transition:all var(--tr);}
+.exp-book:hover{background:var(--primary-h);transform:translateY(-1px);}
+
+/* ── HIGHLIGHT SPLIT ── */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.split-img{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg);}
+.split-img .si-bg{height:500px;background-size:cover;background-position:center;}
+.split-body .eyebrow{margin-bottom:.5rem;}
+.split-body h2{margin-bottom:.8rem;}
+.split-body .divider{margin:0 0 1.4rem;}
+.split-list{list-style:none;margin-top:1rem;}
+.split-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.75rem 0;border-bottom:1px solid var(--border);font-size:.91rem;color:var(--text);}
+.split-list li::before{content:"→";color:var(--primary);flex-shrink:0;font-weight:700;margin-top:.05rem;}
+.section--dark .split-list li{border-bottom-color:rgba(255,255,255,.1);color:rgba(255,255,255,.75);}
+
+/* ── HIDDEN NEPAL RIBBON ── */
+.hidden-ribbon{background:linear-gradient(135deg,var(--himalaya) 0%,#0d2440 100%);padding:72px 0;overflow:hidden;position:relative;}
+.hidden-ribbon::before{content:"";position:absolute;right:-100px;top:-100px;width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,.02);pointer-events:none;}
+.trail-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:rgba(255,255,255,.06);}
+.trail-item{padding:2rem 1.8rem;background:rgba(255,255,255,.02);transition:background var(--tr);}
+.trail-item:hover{background:rgba(255,77,0,.08);}
+.trail-emoji{font-size:1.8rem;margin-bottom:.8rem;}
+.trail-item h4{font-family:var(--font-h);font-size:.95rem;font-weight:700;color:var(--gold);margin-bottom:.4rem;}
+.trail-item p{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.68;}
+
+/* ── VALUES ── */
+.values-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.4rem;}
+.value-card{background:#fff;border-radius:var(--r);padding:1.8rem 1.6rem;box-shadow:var(--shadow);border-left:4px solid var(--primary);transition:all var(--tr);}
+.value-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);}
+.value-icon{font-size:1.8rem;margin-bottom:.8rem;}
+.value-card h4{font-family:var(--font-h);font-size:.95rem;font-weight:800;color:var(--accent);margin-bottom:.4rem;}
+.value-card p{font-size:.84rem;color:var(--text);line-height:1.7;}
+
+/* ── STUDENT FOCUS ── */
+.student-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.student-card{border-radius:var(--r);overflow:hidden;position:relative;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;}
+.sc-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .5s ease;}
+.student-card:hover .sc-bg{transform:scale(1.05);}
+.sc-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,20,40,.9) 0%,rgba(10,20,40,.2) 60%,transparent 100%);}
+.sc-body{position:relative;z-index:1;padding:1.8rem;}
+.sc-tag{font-family:var(--font-h);font-size:.62rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem;}
+.student-card h3{font-size:1.2rem;color:#fff;margin-bottom:.4rem;}
+.student-card p{font-size:.82rem;color:rgba(255,255,255,.7);line-height:1.6;}
+
+/* ── RESPONSIBLE TRAVEL ── */
+.resp-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center;}
+.resp-pillars{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.resp-pillar{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:1.4rem 1.2rem;transition:background var(--tr);}
+.resp-pillar:hover{background:rgba(255,255,255,.1);}
+.resp-pillar-icon{font-size:1.5rem;margin-bottom:.6rem;}
+.resp-pillar h4{font-family:var(--font-h);font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.3rem;}
+.resp-pillar p{font-size:.8rem;color:rgba(255,255,255,.55);line-height:1.65;}
+
+/* ── BOOKING SECTION ── */
+.booking-section{background:var(--bg-light);padding:80px 0;}
+.booking-inner{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:start;}
+.booking-form-wrap{background:#fff;border-radius:var(--r);box-shadow:var(--shadow-lg);overflow:hidden;}
+.booking-form-head{background:var(--secondary);padding:1.8rem 2rem;}
+.booking-form-head h3{font-family:var(--font-h);font-size:1.2rem;font-weight:800;color:#fff;}
+.booking-form-head p{font-size:.82rem;color:rgba(255,255,255,.6);margin-top:.25rem;}
+.booking-form-body{padding:2rem;}
+.flbl{font-family:var(--font-h);font-size:.67rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--primary);margin-bottom:.85rem;margin-top:1.5rem;display:block;}
+.flbl:first-child{margin-top:0;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.frow.full{grid-template-columns:1fr;}
+.fg{display:flex;flex-direction:column;gap:.28rem;}
+.fg label{font-size:.74rem;font-weight:600;color:var(--accent);}
+.fg input,.fg select,.fg textarea{font-family:var(--font-b);font-size:.89rem;color:var(--accent);background:#fff;border:1.5px solid var(--border);border-radius:var(--rs);padding:.7rem .9rem;width:100%;outline:none;transition:border-color var(--tr),box-shadow var(--tr);}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(255,77,0,.1);}
+.fg textarea{resize:vertical;min-height:80px;}
+.ferr{border-color:#e53e3e!important;}
+.submit-btn{width:100%;padding:1rem;background:var(--primary);color:#fff;border:none;border-radius:var(--rp);cursor:pointer;font-family:var(--font-h);font-size:.9rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;transition:all var(--tr);margin-top:1.4rem;}
+.submit-btn:hover{background:var(--primary-h);transform:translateY(-1px);}
+.submit-btn:disabled{background:var(--light);cursor:not-allowed;transform:none;}
+.form-note{font-size:.73rem;color:var(--light);text-align:center;margin-top:.8rem;line-height:1.6;}
+.form-note a{color:var(--primary);}
+.booking-info h3{font-family:var(--font-h);font-size:1.4rem;font-weight:800;color:var(--accent);margin-bottom:.6rem;}
+.booking-info p{font-size:.9rem;color:var(--text);line-height:1.8;margin-bottom:1.5rem;}
+.info-list{list-style:none;margin-bottom:2rem;}
+.info-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.7rem 0;border-bottom:1px solid var(--border);font-size:.88rem;color:var(--text);}
+.info-list li::before{content:"✓";color:var(--leaf);font-weight:700;flex-shrink:0;}
+.contact-box{background:var(--secondary);border-radius:var(--r);padding:1.5rem 1.6rem;color:#fff;}
+.contact-box h4{font-family:var(--font-h);font-size:.95rem;font-weight:700;color:var(--gold);margin-bottom:.5rem;}
+.contact-box p{font-size:.84rem;color:rgba(255,255,255,.7);margin-bottom:.8rem;line-height:1.65;}
+.contact-box a{color:var(--gold);font-size:.88rem;font-weight:600;}
+
+/* SUCCESS */
+.form-success{display:none;text-align:center;padding:3rem 2rem;}
+.success-circle{width:68px;height:68px;border-radius:50%;background:rgba(45,106,63,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1.1rem;font-size:1.9rem;}
+.success-title{font-family:var(--font-h);font-size:1.6rem;font-weight:800;color:var(--leaf);margin-bottom:.5rem;}
+.success-body{font-size:.9rem;color:var(--text);line-height:1.75;}
+
+/* ── CTA ── */
+.cta-section{padding:88px 24px;text-align:center;background:linear-gradient(135deg,var(--secondary) 0%,#1a0a02 100%);position:relative;overflow:hidden;}
+.cta-section::before{content:"🏔";position:absolute;font-size:18rem;right:-40px;top:-40px;opacity:.04;pointer-events:none;line-height:1;}
+.cta-section h2{color:#fff;margin-bottom:.9rem;}
+.cta-section p{color:rgba(255,255,255,.6);max-width:500px;margin:0 auto 2.5rem;font-size:1rem;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+
+/* ── FOOTER ── */
+.site-footer{background:var(--accent);color:rgba(255,255,255,.45);padding:52px 0 0;}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding:0 24px;max-width:1180px;margin:0 auto;}
+.foot-brand .nav-logo{color:#fff;display:inline-block;margin-bottom:.9rem;}
+.foot-brand p{font-size:.84rem;line-height:1.75;max-width:290px;}
+.foot-email{display:inline-block;margin-top:.75rem;color:var(--gold);font-size:.84rem;}
+.foot-col h5{font-family:var(--font-h);font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:.9rem;}
+.foot-col ul{list-style:none;}
+.foot-col ul li{margin-bottom:.45rem;}
+.foot-col ul a{font-size:.86rem;color:rgba(255,255,255,.45);transition:color var(--tr);}
+.foot-col ul a:hover{color:var(--primary);}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.07);margin-top:2.8rem;padding:1.3rem 24px;display:flex;align-items:center;justify-content:space-between;max-width:1180px;margin-left:auto;margin-right:auto;flex-wrap:wrap;gap:1rem;}
+.foot-bottom p,.foot-bottom a{font-size:.75rem;color:rgba(255,255,255,.27);}
+.foot-bottom a:hover{color:var(--primary);}
+.foot-links{display:flex;gap:1.3rem;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .mission-inner{grid-template-columns:1fr;}
+  .stat-grid{grid-template-columns:repeat(2,1fr);}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}
+  .split{grid-template-columns:1fr;gap:2.5rem;}
+  .split-img{order:-1;}
+  .split-img .si-bg{height:320px;}
+  .resp-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .student-grid{grid-template-columns:1fr 1fr;}
+  .why-grid{grid-template-columns:1fr 1fr;}
+  .booking-inner{grid-template-columns:1fr;gap:2.5rem;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .nav-list{display:none;}
+  .nav-burger{display:flex;}
+  .nav-list.open{display:flex;flex-direction:column;position:fixed;top:70px;left:0;right:0;background:#fff;padding:1.3rem;gap:.2rem;z-index:899;box-shadow:0 8px 24px rgba(0,0,0,.1);}
+  .nav-list.open .nav-link{color:var(--accent);padding:.7rem 1rem;}
+  .section{padding:56px 0;}
+  .exp-grid{grid-template-columns:1fr;}
+  .why-grid,.student-grid{grid-template-columns:1fr;}
+  .resp-pillars{grid-template-columns:1fr;}
+  .trail-grid{grid-template-columns:1fr 1fr;}
+  .frow{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;}
+  .foot-bottom{flex-direction:column;text-align:center;}
+  .hero h1{font-size:2.4rem;}
+}
+@media(max-width:480px){
+  .trail-grid{grid-template-columns:1fr;}
+  .stat-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-inner">
+    <a href="unique_gap_years.html" class="nav-logo">Unique<span>Gap</span>Years</a>
+    <ul class="nav-list" id="navList">
+      <li><a href="#experiences" class="nav-link" onclick="closeNav()">Experiences</a></li>
+      <li><a href="#hidden-nepal" class="nav-link" onclick="closeNav()">Hidden Nepal</a></li>
+      <li><a href="#responsible" class="nav-link" onclick="closeNav()">Responsible Travel</a></li>
+      <li><a href="#students" class="nav-link" onclick="closeNav()">For Students</a></li>
+      <li><a href="#book" class="nav-link nav-cta" onclick="closeNav()">Book Your Trip</a></li>
+    </ul>
+    <div class="nav-burger" id="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-content">
+    <div class="hero-breadcrumb">
+      <a href="unique_gap_years.html">Unique Gap Years</a> › <span>Nepal Student Adventures</span>
+    </div>
+    <h1>From the Himalayas<br>to <em>Lumbini &amp; Beyond.</em></h1>
+    <p class="hero-sub">Your go-to partner for affordable, well-crafted Nepal adventures between academic terms. From the snow-capped Himalayas to Chitwan's jungles, the ancient kingdom of Mustang, and the sacred birthplace of Buddha at Lumbini — we open doors others don't.</p>
+    <div class="hero-btns">
+      <a href="#experiences" class="btn btn-primary">Explore Experiences</a>
+      <a href="#book" class="btn btn-outline-w">Book Your Trip</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><span class="trust-icon">🎓</span> UK University Students</div>
+      <div class="trust-item"><span class="trust-icon">✈️</span> Student-Friendly Prices</div>
+      <div class="trust-item"><span class="trust-icon">🌿</span> Responsible Travel</div>
+      <div class="trust-item"><span class="trust-icon">🤝</span> Community-First</div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<!-- MISSION -->
+<div class="mission-band">
+  <div class="container">
+    <div class="mission-inner">
+      <div>
+        <div class="mission-label">Our Vision</div>
+        <div class="mission-heading">The go-to partner<br>for Nepal adventures.</div>
+      </div>
+      <div>
+        <p class="mission-text">We are building a <strong>leading and trusted travel company</strong> for those who seek to broaden their horizons through meaningful and adventurous experiences. We aspire to be recognised for <strong>opening doors to the hidden corners of Nepal</strong> — offering journeys that go beyond the ordinary, from the <strong>Himalayas to Chitwan, Mustang, Lumbini, and beyond</strong>.<br><br>We envision a future where <strong>students and young travellers, particularly from the UK</strong>, turn to us as their go-to partner for <strong>affordable, well-crafted adventures between academic terms</strong> — catering to all budgets while maintaining the highest standards of safety, authenticity, and service. Through innovation, cultural respect, and responsible tourism, we inspire a <strong>new generation of explorers</strong> to discover Nepal in a way that is both impactful and unforgettable.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stat-strip">
+  <div class="container">
+    <div class="stat-grid">
+      <div class="stat-item"><div class="stat-num">£0</div><div class="stat-lbl">Hidden fees, ever</div></div>
+      <div class="stat-item"><div class="stat-num">15+</div><div class="stat-lbl">Curated experiences</div></div>
+      <div class="stat-item"><div class="stat-num">All</div><div class="stat-lbl">Budgets catered for</div></div>
+      <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-lbl">In-country support</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<section class="section section--light">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Travel Designed for<br><em style="color:var(--primary);font-style:italic;">Curious Students</em></h2>
+      <div class="divider"></div>
+      <p class="lead">We combine affordability with rich, educational experiences — fostering cultural exchange, environmental awareness, and a genuine spirit of adventure.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🎓</div>
+        <h3>Built for University Students</h3>
+        <p>Every itinerary is designed with student schedules, budgets, and ambitions in mind. We partner directly with UK universities and student unions to make access easy.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🗺️</div>
+        <h3>Off the Beaten Track</h3>
+        <p>Forget Thamel. We take you to remote Mustang, hidden villages of the Annapurna foothills, and jungle trails in Chitwan that most visitors never reach.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌿</div>
+        <h3>Genuinely Responsible</h3>
+        <p>We partner with local guides, stay in community-owned lodges, and directly support the villages we visit. Travel should leave places better, not worse.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💰</div>
+        <h3>Transparent Pricing</h3>
+        <p>No hidden costs. No bait-and-switch. Our prices are fixed and student-friendly — you'll know exactly what you're getting before you commit to a deposit.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📚</div>
+        <h3>Educational at Heart</h3>
+        <p>Every experience is an opportunity to learn — about Nepali history, ecology, religion, and daily life. We brief students before and debrief after every journey.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🛡️</div>
+        <h3>Safe & Supported</h3>
+        <p>Full pre-departure briefings, local emergency contacts, and 24/7 in-country support throughout. You're never alone, even in the most remote corners of Nepal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- VISION SECTION -->
+<section class="section" style="background:linear-gradient(135deg,var(--himalaya) 0%,#0d2035 100%);padding:80px 0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+      <div>
+        <span class="eyebrow" style="color:var(--gold);">Our Vision</span>
+        <h2 style="color:#fff;margin-bottom:.8rem;">A Leading &amp; Trusted<br><em style="color:var(--primary);font-style:italic;">Nepal Travel Partner</em></h2>
+        <div class="divider" style="background:var(--primary);"></div>
+        <p style="font-size:1rem;color:rgba(255,255,255,.7);line-height:1.85;margin-bottom:1.4rem;">We aspire to be the company that <strong style="color:#fff;">students and young travellers from the UK</strong> turn to first when they want Nepal — not just a booking platform, but a genuine partner who knows every trail, village, and hidden corner.</p>
+        <p style="font-size:1rem;color:rgba(255,255,255,.7);line-height:1.85;margin-bottom:2rem;">Our commitment is simple: <strong style="color:#fff;">all budgets, all standards</strong>. Whether you have £400 or £2,000 to spend, you deserve safety, authenticity, and an experience that is unforgettable — and we will deliver it.</p>
+        <a href="#budget" class="btn btn-primary">See Our Budget Options</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.6rem 1.4rem;text-align:center;">
+          <div style="font-size:2.2rem;font-weight:900;font-family:var(--font-h);color:var(--primary);line-height:1;margin-bottom:.3rem;">£390</div>
+          <div style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);">Starting from</div>
+        </div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.6rem 1.4rem;text-align:center;">
+          <div style="font-size:2.2rem;font-weight:900;font-family:var(--font-h);color:var(--primary);line-height:1;margin-bottom:.3rem;">10+</div>
+          <div style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);">Destinations</div>
+        </div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.6rem 1.4rem;text-align:center;">
+          <div style="font-size:2.2rem;font-weight:900;font-family:var(--font-h);color:var(--primary);line-height:1;margin-bottom:.3rem;">4</div>
+          <div style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);">Term-break windows</div>
+        </div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.6rem 1.4rem;text-align:center;">
+          <div style="font-size:2.2rem;font-weight:900;font-family:var(--font-h);color:var(--primary);line-height:1;margin-bottom:.3rem;">100%</div>
+          <div style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);">All-inclusive pricing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUDGET TIERS -->
+<section class="section section--cream" id="budget">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Catering to All Budgets</span>
+      <h2>Every Budget.<br><em style="color:var(--primary);font-style:italic;">Every Adventure.</em></h2>
+      <div class="divider"></div>
+      <p class="lead">We believe transformative travel should be accessible — not a luxury. That's why we offer three clear budget tiers, each with the same high standards of safety, authenticity, and local expertise.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.08);border:1px solid #e8e8e8;transition:transform .3s,box-shadow .3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 8px 40px rgba(0,0,0,.14)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 24px rgba(0,0,0,.08)'">
+        <div style="background:var(--bg-light);padding:1.8rem;text-align:center;border-bottom:3px solid var(--border);">
+          <div style="font-size:1.4rem;margin-bottom:.5rem;">🎒</div>
+          <div style="font-family:var(--font-h);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--light);margin-bottom:.3rem;">Explorer Budget</div>
+          <div style="font-family:var(--font-h);font-size:2.5rem;font-weight:900;color:var(--accent);line-height:1;">£390<span style="font-size:1rem;font-weight:400;color:var(--light);">+</span></div>
+          <div style="font-size:.78rem;color:var(--light);margin-top:.3rem;">Perfect for tight student budgets</div>
+        </div>
+        <div style="padding:1.6rem;">
+          <ul style="list-style:none;">
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Community guesthouse accommodation</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Local guide included</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>All meals from local dal bhat kitchens</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Shared group transport</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>24/7 in-country support</li>
+          </ul>
+          <a href="#book" class="btn btn-outline" style="width:100%;text-align:center;display:block;margin-top:1.2rem;">Book Explorer</a>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 8px 40px rgba(255,77,0,.18);border:2px solid var(--primary);transform:translateY(-8px);position:relative;">
+        <div style="position:absolute;top:0;left:0;right:0;background:var(--primary);padding:.4rem;text-align:center;font-family:var(--font-h);font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#fff;">Most Popular</div>
+        <div style="background:var(--primary);padding:2rem 1.8rem 1.8rem;text-align:center;border-bottom:none;margin-top:1.8rem;">
+          <div style="font-size:1.4rem;margin-bottom:.5rem;">⭐</div>
+          <div style="font-family:var(--font-h);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:.3rem;">Adventurer Standard</div>
+          <div style="font-family:var(--font-h);font-size:2.5rem;font-weight:900;color:#fff;line-height:1;">£790<span style="font-size:1rem;font-weight:400;color:rgba(255,255,255,.6);">+</span></div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.65);margin-top:.3rem;">Best value mid-range experience</div>
+        </div>
+        <div style="padding:1.6rem;">
+          <ul style="list-style:none;">
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>En-suite lodge or heritage hotel</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Dedicated private guide</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>All meals + cultural dining experiences</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Private vehicle + domestic flights</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Pre-departure cultural briefing pack</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>24/7 in-country support</li>
+          </ul>
+          <a href="#book" class="btn btn-primary" style="width:100%;text-align:center;display:block;margin-top:1.2rem;">Book Adventurer</a>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.08);border:1px solid #e8e8e8;transition:transform .3s,box-shadow .3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 8px 40px rgba(0,0,0,.14)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 24px rgba(0,0,0,.08)'">
+        <div style="background:var(--secondary);padding:1.8rem;text-align:center;border-bottom:3px solid var(--gold);">
+          <div style="font-size:1.4rem;margin-bottom:.5rem;">👑</div>
+          <div style="font-family:var(--font-h);font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.3rem;">Pioneer Premium</div>
+          <div style="font-family:var(--font-h);font-size:2.5rem;font-weight:900;color:var(--gold);line-height:1;">£1,400<span style="font-size:1rem;font-weight:400;color:rgba(255,255,255,.4);">+</span></div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.5);margin-top:.3rem;">Premium comfort, remote access</div>
+        </div>
+        <div style="padding:1.6rem;">
+          <ul style="list-style:none;">
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Boutique &amp; riverside lodge stays</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Expert specialist guide</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Full-board fine Nepali dining</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Private helicopter access where available</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;border-bottom:1px solid #e8e8e8;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>Bespoke itinerary, permits included</li>
+            <li style="display:flex;align-items:flex-start;gap:.6rem;padding:.55rem 0;font-size:.87rem;color:#555;"><span style="color:#2d6a3f;font-weight:700;flex-shrink:0;">✓</span>VIP airport transfers &amp; concierge</li>
+          </ul>
+          <a href="#book" class="btn btn-secondary" style="width:100%;text-align:center;display:block;margin-top:1.2rem;">Book Pioneer</a>
+        </div>
+      </div>
+
+    </div>
+    <p style="text-align:center;font-size:.82rem;color:var(--light);margin-top:1.5rem;">All prices are per person and fully inclusive of accommodation, meals, guides, permits, and in-country transport. Flights from the UK not included.</p>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="section" id="experiences">
+  <div class="container">
+    <span class="eyebrow">Signature Experiences</span>
+    <h2>Adventures That<br><em style="color:var(--primary);font-style:italic;">Change How You See the World</em></h2>
+    <div class="divider"></div>
+    <p class="lead">From jungle safaris to remote mountain kingdoms — every experience is hand-crafted to go deeper than the guidebook.</p>
+    <div class="exp-grid">
+
+      <div class="exp-card" onclick="openBook('Chitwan Jungle Safari','Chitwan National Park · 5 days','£590','£120')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-wildlife">Wildlife</span><span class="exp-dur">⏱ 5 days</span></div>
+        <div class="exp-body">
+          <h3>Chitwan Jungle Safari</h3>
+          <p>Canoe through Chitwan's river channels, track rhino and elephant on foot with a Tharu guide, and sleep in a community-owned jungle lodge far from tourist crowds.</p>
+          <div class="exp-tags"><span class="exp-tag">Wildlife</span><span class="exp-tag">Tharu Culture</span><span class="exp-tag">Community Stay</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£590</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Mustang Cultural Immersion','Upper Mustang · 10 days','£1,190','£250')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-culture">Culture</span><span class="exp-dur">⏱ 10 days</span></div>
+        <div class="exp-body">
+          <h3>Mustang Cultural Immersion</h3>
+          <p>Journey deep into the forbidden kingdom of Upper Mustang — ancient cave monasteries, Tibetan-influenced villages, and landscapes that feel like another planet entirely.</p>
+          <div class="exp-tags"><span class="exp-tag">Remote Kingdom</span><span class="exp-tag">Monastery Stays</span><span class="exp-tag">Tibetan Culture</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£1,190</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Annapurna Hidden Villages Trek','Annapurna Region · 8 days','£890','£180')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-trek">Trekking</span><span class="exp-dur">⏱ 8 days</span></div>
+        <div class="exp-body">
+          <h3>Annapurna Hidden Villages Trek</h3>
+          <p>Leave the circuit behind. Stay in villages that see fewer than 50 visitors a year, share meals with local families, and see the Himalayas from angles no guidebook shows.</p>
+          <div class="exp-tags"><span class="exp-tag">Off-trail</span><span class="exp-tag">Village Stays</span><span class="exp-tag">Local Guides</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£890</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Kathmandu Deep Dive','Kathmandu Valley · 4 days','£390','£90')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-culture">Culture</span><span class="exp-dur">⏱ 4 days</span></div>
+        <div class="exp-body">
+          <h3>Kathmandu Deep Dive</h3>
+          <p>Skip the tourist circuit. Spend four days with a local historian, artisan families, and community leaders — understanding Kathmandu from the inside out.</p>
+          <div class="exp-tags"><span class="exp-tag">City Culture</span><span class="exp-tag">Art & Craft</span><span class="exp-tag">Living History</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£390</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Langtang Valley Eco-Trek','Langtang National Park · 9 days','£950','£200')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1617139718505-a55aaed5fcff?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-trek">Eco Trek</span><span class="exp-dur">⏱ 9 days</span></div>
+        <div class="exp-body">
+          <h3>Langtang Valley Eco-Trek</h3>
+          <p>Trek through Langtang National Park — one of Nepal's most ecologically rich regions. Meet Tamang communities rebuilding after the 2015 earthquake and learn their stories.</p>
+          <div class="exp-tags"><span class="exp-tag">Ecology</span><span class="exp-tag">Tamang Culture</span><span class="exp-tag">Responsible</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£950</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Pokhara & Phewa Valley Explorer','Pokhara Region · 5 days','£490','£100')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-adventure">Adventure</span><span class="exp-dur">⏱ 5 days</span></div>
+        <div class="exp-body">
+          <h3>Pokhara &amp; Phewa Valley Explorer</h3>
+          <p>Kayak on Phewa Lake at dawn, hike to Sarangkot for Himalayan sunrise views, and discover the villages and sacred sites around the valley that tourists rush straight past.</p>
+          <div class="exp-tags"><span class="exp-tag">Kayaking</span><span class="exp-tag">Sunrise Trek</span><span class="exp-tag">Valley Culture</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£490</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Dolpo Wilderness Expedition','Dolpo District · 14 days','£1,650','£350')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1580674285054-bed31e145f59?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-hidden">Hidden Nepal</span><span class="exp-dur">⏱ 14 days</span></div>
+        <div class="exp-body">
+          <h3>Dolpo Wilderness Expedition</h3>
+          <p>One of the most remote destinations on earth. Trek through Shey Phoksundo National Park to the crystal mountain lake, visiting Bon monasteries and ancient salt-trading routes.</p>
+          <div class="exp-tags"><span class="exp-tag">Ultra-Remote</span><span class="exp-tag">Bon Culture</span><span class="exp-tag">Crystal Lake</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£1,650</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Bandipur & Gorkha Heritage Trail','Central Nepal · 6 days','£590','£130')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1609766857576-fbedb4b5b9c5?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-culture">Heritage</span><span class="exp-dur">⏱ 6 days</span></div>
+        <div class="exp-body">
+          <h3>Bandipur &amp; Gorkha Heritage Trail</h3>
+          <p>Walk between two of Nepal's most historically significant and least-visited towns — Bandipur's preserved Newari streetscape and Gorkha's royal palace above the clouds.</p>
+          <div class="exp-tags"><span class="exp-tag">Newari Heritage</span><span class="exp-tag">Royal History</span><span class="exp-tag">Village Trail</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£590</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Everest Region – The Other Side','Solu Khumbu · 12 days','£1,350','£280')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1469521669194-babb45599def?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-trek">Everest Region</span><span class="exp-dur">⏱ 12 days</span></div>
+        <div class="exp-body">
+          <h3>Everest Region – The Other Side</h3>
+          <p>Not Namche Bazaar. We take you up the quiet valleys, through Sherpa villages rarely visited, to viewpoints that rival Base Camp without the crowds or the cost.</p>
+          <div class="exp-tags"><span class="exp-tag">Sherpa Culture</span><span class="exp-tag">Quiet Trails</span><span class="exp-tag">High Altitude</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£1,350</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+      <div class="exp-card" onclick="openBook('Nepal Complete – Student Edition','Multi-region · 21 days','£2,490','£500')">
+        <div class="exp-media"><div class="exp-bg" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=600&auto=format&fit=crop&q=75')"></div><span class="exp-badge badge-adventure">Full Programme</span><span class="exp-dur">⏱ 21 days</span></div>
+        <div class="exp-body">
+          <h3>Nepal Complete – Student Edition</h3>
+          <p>Chitwan jungle safari → Pokhara → Annapurna hidden villages → Mustang → Kathmandu. The complete Nepal experience, designed for a 3-week university break.</p>
+          <div class="exp-tags"><span class="exp-tag">Multi-region</span><span class="exp-tag">Best Value</span><span class="exp-tag">Full Nepal</span></div>
+          <div class="exp-price-row"><div><span class="exp-price">£2,490</span><small class="exp-price">per student, all incl.</small></div><button class="exp-book">Book Now</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HIDDEN NEPAL -->
+<section class="hidden-ribbon" id="hidden-nepal">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow" style="color:var(--gold);">The Hidden Corners</span>
+      <h2 style="color:#fff;margin-bottom:.5rem;">Nepal Beyond the Guidebook</h2>
+      <div class="divider" style="margin:1rem auto 2rem;background:var(--primary);"></div>
+      <p class="lead" style="margin:0 auto 3rem;">These are the places, people and traditions most travellers never reach — and the ones our students talk about for years afterwards.</p>
+    </div>
+    <div class="trail-grid">
+      <div class="trail-item"><div class="trail-emoji">🦏</div><h4>Chitwan's Inner Jungle</h4><p>Beyond the resort safaris, deep in Chitwan with Tharu trackers — where rhino, gharial and Bengal tigers still roam.</p></div>
+      <div class="trail-item"><div class="trail-emoji">🏔️</div><h4>Upper Mustang</h4><p>The forbidden kingdom — ancient cave monasteries, eroded canyon landscapes and Tibetan Buddhist culture largely unchanged for centuries.</p></div>
+      <div class="trail-item"><div class="trail-emoji">🏘️</div><h4>Remote Annapurna Villages</h4><p>Ghalegaun, Sikles, Ghaletar — settlements that see a fraction of the traffic of the main circuit, with extraordinary highland hospitality.</p></div>
+      <div class="trail-item"><div class="trail-emoji">💎</div><h4>Shey Phoksundo Lake</h4><p>One of the most spectacular alpine lakes on earth, deep in Dolpo — turquoise waters surrounded by thousand-metre cliffs in near-total silence.</p></div>
+      <div class="trail-item"><div class="trail-emoji">🏛️</div><h4>Bandipur Old Town</h4><p>A perfectly preserved hilltop Newari town that feels frozen in the 19th century — cobbled streets, traditional courtyards, and no through traffic.</p></div>
+      <div class="trail-item"><div class="trail-emoji">🌄</div><h4>Gorkha Royal Palace</h4><p>The ancestral home of Nepal's royal dynasty — a stunning hilltop palace above the clouds, visited by barely a handful of tourists each week.</p></div>
+      <div class="trail-item"><div class="trail-emoji">🛶</div><h4>Koshi Tappu Wetlands</h4><p>Nepal's oldest wildlife reserve — a birdwatcher's paradise in the eastern Terai, home to wild water buffalo and hundreds of migratory species.</p></div>
+      <div class="trail-item"><div class="trail-emoji">⛩️</div><h4>Palpa & Tansen</h4><p>A hilltop town of Newari metalworkers, forgotten Buddhist shrines, and some of the most spectacular valley views in the entire country.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESPONSIBLE TRAVEL -->
+<section class="section section--dark" id="responsible">
+  <div class="container">
+    <div class="resp-grid">
+      <div>
+        <span class="eyebrow">Responsible Travel</span>
+        <h2>We Leave Places<br><em style="color:var(--gold);font-style:italic;">Better</em></h2>
+        <div class="divider" style="background:var(--primary);"></div>
+        <p class="lead">Our commitment to responsible tourism is not a marketing line — it is built into every booking, every itinerary, and every relationship we have with local communities.</p>
+        <a href="#book" class="btn btn-gold">Book Responsibly</a>
+      </div>
+      <div class="resp-pillars">
+        <div class="resp-pillar"><div class="resp-pillar-icon">🏡</div><h4>Community Lodges</h4><p>We stay in community-owned accommodation wherever possible, ensuring tourism income stays in the village.</p></div>
+        <div class="resp-pillar"><div class="resp-pillar-icon">👨‍🏫</div><h4>Local Expert Guides</h4><p>Every guide is a trained local — from the same region or community we visit. No outside operators.</p></div>
+        <div class="resp-pillar"><div class="resp-pillar-icon">🌱</div><h4>Low-Impact Routes</h4><p>We avoid overcrowded trails, use clean transport where available, and carry out all waste from remote areas.</p></div>
+        <div class="resp-pillar"><div class="resp-pillar-icon">📖</div><h4>Cultural Briefings</h4><p>Students receive in-depth cultural and historical briefings before every experience, so engagement is respectful and informed.</p></div>
+        <div class="resp-pillar"><div class="resp-pillar-icon">💷</div><h4>Fair Pay</h4><p>Every porter, cook, guide and host is paid above the local living wage. We publish our pay rates on request.</p></div>
+        <div class="resp-pillar"><div class="resp-pillar-icon">🦁</div><h4>Wildlife Ethics</h4><p>No elephant rides. No captive animal encounters. Wildlife experiences are always observation-only with trained naturalists.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR STUDENTS -->
+<section class="section section--cream" id="students">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Built for UK University Students</span>
+      <h2>Adventures Designed<br><em style="color:var(--primary);font-style:italic;">Around Your Life</em></h2>
+      <div class="divider"></div>
+      <p class="lead">Student schedules, student budgets, student ambitions — every part of our Nepal programme is designed with you in mind.</p>
+    </div>
+    <div class="student-grid">
+      <div class="student-card">
+        <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop&q=75')"></div>
+        <div class="sc-body"><div class="sc-tag">Flexible Timing</div><h3>Fits Your Term Dates</h3><p>All experiences designed to run in 4–21 day windows — perfect for summer, Easter, and reading week breaks.</p></div>
+      </div>
+      <div class="student-card">
+        <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&auto=format&fit=crop&q=75')"></div>
+        <div class="sc-body"><div class="sc-tag">Transparent Pricing</div><h3>No Hidden Costs</h3><p>All prices are fully inclusive — accommodation, food, guides, permits, and in-country transport. No surprises.</p></div>
+      </div>
+      <div class="student-card">
+        <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=75')"></div>
+        <div class="sc-body"><div class="sc-tag">Group Bookings</div><h3>Bring Your Society</h3><p>Book as a group of 4 or more and receive a group discount. We work with university societies and student unions directly.</p></div>
+      </div>
+    </div>
+    <div class="why-grid" style="margin-top:1.5rem;">
+      <div class="why-card">
+        <div class="why-icon">💳</div>
+        <h3>Deposit &amp; Pay Later</h3>
+        <p>Secure your place with a small deposit and pay the balance 8 weeks before travel — giving you time to budget properly around term time.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏥</div>
+        <h3>Travel Safety Briefings</h3>
+        <p>Full pre-departure health, safety, and cultural briefings are included for every student — covering altitude, vaccinations, visa requirements, and local customs.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📱</div>
+        <h3>24/7 In-Country Contact</h3>
+        <p>You'll have a direct line to our Nepal team throughout your trip — a real person, on the ground, available around the clock for any situation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section--light">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Our Values</span>
+      <h2>What We Stand For</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card"><div class="value-icon">🔍</div><h4>Curiosity</h4><p>We believe the best travellers ask questions. Every experience is built to provoke curiosity about Nepal's people, ecology, and history.</p></div>
+      <div class="value-card"><div class="value-icon">🤲</div><h4>Authenticity</h4><p>No performances staged for tourists. We build relationships with communities over time so students encounter real daily life.</p></div>
+      <div class="value-card"><div class="value-icon">⚖️</div><h4>Responsibility</h4><p>We take seriously the impact of bringing visitors to fragile ecosystems and communities. Every decision is made with long-term impact in mind.</p></div>
+      <div class="value-card"><div class="value-icon">🌏</div><h4>Understanding</h4><p>Our goal is not just to show students Nepal — it is to help them understand it, carry it with them, and let it change how they see the world.</p></div>
+      <div class="value-card"><div class="value-icon">♻️</div><h4>Sustainability</h4><p>Environmental awareness is woven into every itinerary — from low-impact routes to plastic-free kit lists and leave-no-trace camping.</p></div>
+      <div class="value-card"><div class="value-icon">🤝</div><h4>Community First</h4><p>Tourism income belongs in local hands. We measure success by how much money stays in the communities we visit — not by our margins.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-section" id="book">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="booking-form-wrap">
+        <div class="booking-form-head">
+          <h3>Book Your Nepal Adventure</h3>
+          <p>Secure your place with a small deposit. We'll confirm within 24 hours.</p>
+        </div>
+        <div class="booking-form-body">
+          <div id="formState">
+            <span class="flbl">Your Details</span>
+            <div class="frow"><div class="fg"><label>First Name *</label><input type="text" id="bFirst" placeholder="Jane" autocomplete="given-name"></div><div class="fg"><label>Last Name *</label><input type="text" id="bLast" placeholder="Smith" autocomplete="family-name"></div></div>
+            <div class="frow"><div class="fg"><label>Email Address *</label><input type="email" id="bEmail" placeholder="jane@university.ac.uk" autocomplete="email"></div><div class="fg"><label>Phone / WhatsApp</label><input type="tel" id="bPhone" placeholder="+44 …" autocomplete="tel"></div></div>
+            <div class="frow"><div class="fg"><label>University</label><input type="text" id="bUni" placeholder="University of Edinburgh"></div><div class="fg"><label>Year of Study</label><select id="bYear"><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option><option>Masters</option><option>PhD</option><option>Other</option></select></div></div>
+
+            <span class="flbl">Trip Details</span>
+            <div class="frow full"><div class="fg"><label>Which Experience? *</label>
+              <select id="bExp">
+                <option value="">Select an experience…</option>
+                <option>Chitwan Jungle Safari – 5 days – £590</option>
+                <option>Mustang Cultural Immersion – 10 days – £1,190</option>
+                <option>Annapurna Hidden Villages Trek – 8 days – £890</option>
+                <option>Kathmandu Deep Dive – 4 days – £390</option>
+                <option>Langtang Valley Eco-Trek – 9 days – £950</option>
+                <option>Pokhara & Phewa Valley Explorer – 5 days – £490</option>
+                <option>Dolpo Wilderness Expedition – 14 days – £1,650</option>
+                <option>Bandipur & Gorkha Heritage Trail – 6 days – £590</option>
+                <option>Everest Region – The Other Side – 12 days – £1,350</option>
+                <option>Nepal Complete – Student Edition – 21 days – £2,490</option>
+              </select>
+            </div></div>
+            <div class="frow"><div class="fg"><label>Preferred Start Date</label><input type="date" id="bDate"></div><div class="fg"><label>Number of Students</label><select id="bGroup"><option>Just me</option><option>2 students</option><option>3 students</option><option>4–6 students</option><option>7–10 students</option><option>10+ students (society)</option></select></div></div>
+            <div class="frow full"><div class="fg"><label>Questions or Special Requirements</label><textarea id="bNotes" placeholder="Dietary needs, fitness level, accessibility requirements, society name…"></textarea></div></div>
+
+            <button class="submit-btn" id="bSubmitBtn" onclick="submitForm()">Reserve My Place — £0 Today</button>
+            <p class="form-note">No payment now. We'll confirm availability and send a deposit invoice within 24 hours. By enquiring you agree to our <a href="#">Terms</a>.</p>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <div class="success-circle">✓</div>
+            <div class="success-title">You're on your way to Nepal!</div>
+            <p class="success-body">Thanks — we've received your booking request and Jack will be in touch at <strong id="bSuccessEmail"></strong> within 24 hours with your deposit invoice and full pre-departure pack.<br><br>Get ready for an adventure that will change how you see the world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="booking-info">
+        <h3>What Happens Next</h3>
+        <p>We keep things simple. Submit your interest below and we'll take care of the rest.</p>
+        <ul class="info-list">
+          <li>We confirm your dates and availability within 24 hours</li>
+          <li>You pay a small deposit to secure your place (typically £90–£350)</li>
+          <li>Balance due 8 weeks before your departure date</li>
+          <li>Full pre-departure briefing pack sent 4 weeks out</li>
+          <li>Our Nepal team meets you on arrival in Kathmandu</li>
+          <li>24/7 in-country support throughout your trip</li>
+          <li>All experiences are fully inclusive — no surprise costs</li>
+        </ul>
+        <div class="contact-box">
+          <h4>Talk to Jack directly</h4>
+          <p>Have questions before you book? Jack is happy to jump on a call to talk through the right experience for your group.</p>
+          <a href="mailto:jack.anderson@uniquegapyears.com">jack.anderson@uniquegapyears.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <span class="eyebrow" style="color:var(--gold);">Ready to go beyond the trail?</span>
+  <h2 style="color:#fff;">Inspire Your Next Generation of<br>Responsible Explorers</h2>
+  <p>Every journey we run puts students in the places, conversations, and experiences that genuinely change how they see the world.</p>
+  <div class="cta-btns">
+    <a href="#experiences" class="btn btn-primary">View All Experiences</a>
+    <a href="unique_gap_years.html" class="btn btn-outline-w">← Back to All Tours</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a href="unique_gap_years.html" class="nav-logo">Unique<span>Gap</span>Years</a>
+      <p>Connecting curious UK university students with the hidden corners of Nepal through authentic, responsible, and transformative travel experiences.</p>
+      <a href="mailto:jack.anderson@uniquegapyears.com" class="foot-email">jack.anderson@uniquegapyears.com</a>
+    </div>
+    <div class="foot-col">
+      <h5>Experiences</h5>
+      <ul>
+        <li><a href="#experiences">Chitwan Jungle Safari</a></li>
+        <li><a href="#experiences">Mustang Immersion</a></li>
+        <li><a href="#experiences">Annapurna Villages Trek</a></li>
+        <li><a href="#experiences">Dolpo Expedition</a></li>
+        <li><a href="#experiences">Nepal Complete</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#responsible">Responsible Travel</a></li>
+        <li><a href="#students">For Students</a></li>
+        <li><a href="unique_gap_years.html">All Programmes</a></li>
+        <li><a href="mailto:jack.anderson@uniquegapyears.com">Contact Jack</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width:1180px;margin:0 auto;padding:0 24px;">
+    <div class="foot-bottom">
+      <p>&copy; 2026 Unique Gap Years – Nepal Student Adventures. All rights reserved.</p>
+      <div class="foot-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="mailto:jack.anderson@uniquegapyears.com">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- BOOKING MODAL (from tour cards) -->
+<div id="bookOverlay" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.6);backdrop-filter:blur(5px);align-items:center;justify-content:center;padding:1rem;" onclick="if(event.target.id==='bookOverlay')closeBook()">
+  <div style="background:#fff;border-radius:10px;width:100%;max-width:500px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.25);">
+    <div style="background:var(--secondary);padding:1.6rem 2rem;display:flex;justify-content:space-between;align-items:flex-start;">
+      <div><div style="font-family:var(--font-h);font-size:1.1rem;font-weight:800;color:#fff;" id="bModalTitle">Book Experience</div><div style="font-size:.8rem;color:rgba(255,255,255,.55);margin-top:.2rem;" id="bModalMeta"></div></div>
+      <button onclick="closeBook()" style="background:rgba(255,255,255,.15);border:none;color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:.95rem;display:flex;align-items:center;justify-content:center;">✕</button>
+    </div>
+    <div style="padding:1.6rem 2rem;">
+      <div id="bModalFormState">
+        <div style="background:var(--bg-light);border-left:4px solid var(--primary);border-radius:5px;padding:.9rem 1.1rem;margin-bottom:1.4rem;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-family:var(--font-h);font-weight:700;font-size:.9rem;color:var(--accent);" id="bModalPriceName"></span>
+          <span style="font-family:var(--font-h);font-size:1.3rem;font-weight:900;color:var(--primary);" id="bModalPrice"></span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.9rem;">
+          <div class="fg"><label>First Name *</label><input type="text" id="mbFirst" placeholder="Jane"></div>
+          <div class="fg"><label>Last Name *</label><input type="text" id="mbLast" placeholder="Smith"></div>
+        </div>
+        <div class="fg" style="margin-bottom:.9rem;"><label>Email Address *</label><input type="email" id="mbEmail" placeholder="jane@university.ac.uk"></div>
+        <div class="fg" style="margin-bottom:.9rem;"><label>University</label><input type="text" id="mbUni" placeholder="University of Edinburgh"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.9rem;">
+          <div class="fg"><label>Preferred Start Date</label><input type="date" id="mbDate"></div>
+          <div class="fg"><label>Group Size</label><select id="mbGroup"><option>Just me</option><option>2 students</option><option>3 students</option><option>4–6 students</option><option>7–10 students</option><option>10+</option></select></div>
+        </div>
+        <div class="fg" style="margin-bottom:0;"><label>Questions</label><textarea id="mbNotes" placeholder="Special requirements, questions…" style="min-height:60px;"></textarea></div>
+        <button class="submit-btn" id="mbSubmitBtn" onclick="submitModal()" style="margin-top:1.2rem;">Reserve My Place</button>
+        <p class="form-note" style="margin-top:.7rem;">No payment now — we confirm within 24 hrs.</p>
+      </div>
+      <div id="bModalSuccess" style="display:none;text-align:center;padding:2rem 1rem;">
+        <div class="success-circle">✓</div>
+        <div class="success-title">Confirmed!</div>
+        <p class="success-body">Jack will be in touch at <strong id="mbSuccessEmail"></strong> within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* NAV */
+window.addEventListener('scroll',()=>{
+  document.getElementById('siteHeader').classList.toggle('scrolled',window.scrollY>60);
+});
+function toggleNav(){document.getElementById('navList').classList.toggle('open');}
+function closeNav(){document.getElementById('navList').classList.remove('open');}
+
+/* MODAL BOOK */
+let curExp={};
+function openBook(name,meta,price,deposit){
+  curExp={name,meta,price,deposit};
+  document.getElementById('bModalTitle').textContent=name;
+  document.getElementById('bModalMeta').textContent=meta;
+  document.getElementById('bModalPriceName').textContent=name;
+  document.getElementById('bModalPrice').textContent=price;
+  document.getElementById('bModalFormState').style.display='block';
+  document.getElementById('bModalSuccess').style.display='none';
+  document.getElementById('mbSubmitBtn').disabled=false;
+  document.getElementById('mbSubmitBtn').textContent='Reserve My Place';
+  ['mbFirst','mbLast','mbEmail','mbUni','mbNotes'].forEach(id=>{
+    const el=document.getElementById(id);if(el){el.value='';el.classList.remove('ferr');}
+  });
+  const ov=document.getElementById('bookOverlay');
+  ov.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function closeBook(){
+  document.getElementById('bookOverlay').style.display='none';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBook();});
+
+function submitModal(){
+  const req=['mbFirst','mbLast','mbEmail'];
+  let ok=true;
+  req.forEach(id=>{const el=document.getElementById(id);if(!el.value.trim()){el.classList.add('ferr');ok=false;}else el.classList.remove('ferr');});
+  if(!ok)return;
+  const btn=document.getElementById('mbSubmitBtn');
+  btn.disabled=true;btn.textContent='Sending…';
+  const email=document.getElementById('mbEmail').value.trim();
+  const payload={
+    _subject:'Nepal Booking: '+curExp.name,_replyto:email,
+    experience:curExp.name,meta:curExp.meta,price:curExp.price,
+    first_name:document.getElementById('mbFirst').value,
+    last_name:document.getElementById('mbLast').value,
+    email,university:document.getElementById('mbUni').value,
+    start_date:document.getElementById('mbDate').value,
+    group_size:document.getElementById('mbGroup').value,
+    notes:document.getElementById('mbNotes').value
+  };
+  fetch('https://formspree.io/f/jack.anderson@uniquegapyears.com',{
+    method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify(payload)
+  })
+  .then(()=>showModalSuccess(email))
+  .catch(()=>{
+    const s=encodeURIComponent('Nepal Booking: '+curExp.name);
+    const b=encodeURIComponent('Experience: '+curExp.name+'\nPrice: '+curExp.price+'\nName: '+payload.first_name+' '+payload.last_name+'\nEmail: '+email+'\nUniversity: '+payload.university+'\nDate: '+payload.start_date+'\nGroup: '+payload.group_size+'\nNotes: '+payload.notes);
+    window.location.href='mailto:jack.anderson@uniquegapyears.com?subject='+s+'&body='+b;
+    showModalSuccess(email);
+  });
+}
+function showModalSuccess(email){
+  document.getElementById('mbSuccessEmail').textContent=email;
+  document.getElementById('bModalFormState').style.display='none';
+  document.getElementById('bModalSuccess').style.display='block';
+}
+
+/* MAIN FORM */
+function submitForm(){
+  const req=['bFirst','bLast','bEmail','bExp'];
+  let ok=true;
+  req.forEach(id=>{const el=document.getElementById(id);if(!el.value.trim()){el.classList.add('ferr');ok=false;}else el.classList.remove('ferr');});
+  if(!ok)return;
+  const btn=document.getElementById('bSubmitBtn');
+  btn.disabled=true;btn.textContent='Sending…';
+  const email=document.getElementById('bEmail').value.trim();
+  const payload={
+    _subject:'Nepal Student Booking: '+document.getElementById('bExp').value,
+    _replyto:email,
+    experience:document.getElementById('bExp').value,
+    first_name:document.getElementById('bFirst').value,
+    last_name:document.getElementById('bLast').value,
+    email,phone:document.getElementById('bPhone').value,
+    university:document.getElementById('bUni').value,
+    year:document.getElementById('bYear').value,
+    start_date:document.getElementById('bDate').value,
+    group_size:document.getElementById('bGroup').value,
+    notes:document.getElementById('bNotes').value
+  };
+  fetch('https://formspree.io/f/jack.anderson@uniquegapyears.com',{
+    method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify(payload)
+  })
+  .then(()=>showFormSuccess(email))
+  .catch(()=>{
+    const s=encodeURIComponent('Nepal Student Booking: '+payload.experience);
+    const b=encodeURIComponent('Experience: '+payload.experience+'\nName: '+payload.first_name+' '+payload.last_name+'\nEmail: '+email+'\nPhone: '+payload.phone+'\nUniversity: '+payload.university+' ('+payload.year+')\nDate: '+payload.start_date+'\nGroup: '+payload.group_size+'\nNotes: '+payload.notes);
+    window.location.href='mailto:jack.anderson@uniquegapyears.com?subject='+s+'&body='+b;
+    showFormSuccess(email);
+  });
+}
+function showFormSuccess(email){
+  document.getElementById('bSuccessEmail').textContent=email;
+  document.getElementById('formState').style.display='none';
+  document.getElementById('formSuccess').style.display='block';
+}
+</script>
+</body>
+</html>

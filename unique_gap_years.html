@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unique Gap Years – Three Countries. One Incredible Journey.</title>
+<meta name="description" content="Gap years, school trips, over-50s travel, group tours and solo guided adventures across Southern Africa, Nepal and the Philippines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#ff4d00;--primary-h:#e54500;
+  --secondary:#5b320d;--secondary-h:#3e2008;
+  --accent:#111;--text:#555;--light:#888;
+  --border:#e8e8e8;--bg:#fff;--bg-light:#f8f5f0;
+  --gold:#c8891a;--leaf:#2d6a3f;--sky:#2a6fa8;
+  --font-h:"Rubik",sans-serif;--font-b:"Inter",sans-serif;
+  --r:10px;--rs:5px;--rp:50px;
+  --shadow:0 4px 24px rgba(0,0,0,.08);--shadow-lg:0 8px 40px rgba(0,0,0,.14);
+  --tr:.3s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-b);background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;transition:color var(--tr);}
+::selection{background:var(--primary);color:#fff;}
+h1,h2,h3,h4,h5{font-family:var(--font-h);color:var(--accent);line-height:1.15;font-weight:800;}
+h1{font-size:clamp(2.4rem,6vw,5.5rem);}
+h2{font-size:clamp(1.8rem,3.5vw,3rem);}
+
+/* UTILS */
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+.section{padding:80px 0;}
+.section--dark{background:var(--secondary);color:#fff;}
+.section--dark h2,.section--dark h3{color:#fff;}
+.section--light{background:var(--bg-light);}
+.eyebrow{font-family:var(--font-h);font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--primary);margin-bottom:.6rem;display:block;}
+.section--dark .eyebrow{color:var(--gold);}
+.lead{font-size:1.05rem;color:var(--text);max-width:620px;line-height:1.8;margin-bottom:2.5rem;}
+.section--dark .lead{color:rgba(255,255,255,.65);}
+.tc{text-align:center;}.tc .lead{margin:0 auto 2.5rem;}
+
+/* BUTTONS */
+.btn{display:inline-block;font-family:var(--font-h);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.85rem 2rem;border-radius:var(--rp);border:none;cursor:pointer;transition:all var(--tr);line-height:1;font-style:normal;}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-primary:hover{background:var(--primary-h);transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,77,0,.35);}
+.btn-outline-w{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);}
+.btn-outline-w:hover{background:#fff;color:var(--primary);}
+
+/* NAV */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:900;transition:background var(--tr),box-shadow var(--tr);}
+.site-header.scrolled{background:#fff;box-shadow:0 2px 20px rgba(0,0,0,.1);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:72px;max-width:1200px;margin:0 auto;}
+.nav-logo{font-family:var(--font-h);font-size:1.3rem;font-weight:900;color:#fff;letter-spacing:-.01em;}
+.nav-logo span{color:var(--primary);}
+.site-header.scrolled .nav-logo{color:var(--accent);}
+.nav-list{display:flex;align-items:center;gap:.2rem;list-style:none;}
+.nav-link{font-family:var(--font-h);font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.85);padding:.5rem .9rem;border-radius:var(--rp);transition:all var(--tr);}
+.site-header.scrolled .nav-link{color:var(--accent);}
+.nav-link:hover{color:#fff;background:rgba(255,255,255,.1);}
+.site-header.scrolled .nav-link:hover{color:var(--primary);background:rgba(255,77,0,.07);}
+.nav-cta{background:var(--primary)!important;color:#fff!important;}
+.nav-cta:hover{background:var(--primary-h)!important;transform:translateY(-1px);}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;}
+.nav-burger span{width:24px;height:2px;background:#fff;border-radius:2px;transition:var(--tr);}
+.site-header.scrolled .nav-burger span{background:var(--accent);}
+
+/* HERO */
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:#0d1a0d;}
+.hero-bg{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1600&auto=format&fit=crop&q=80") center 30%/cover;opacity:.42;}
+.hero-grad{position:absolute;inset:0;background:linear-gradient(105deg,rgba(13,10,5,.9) 0%,rgba(91,50,13,.5) 50%,rgba(13,26,13,.4) 100%);}
+.hero-content{position:relative;z-index:2;padding:120px 24px 80px;max-width:1200px;margin:0 auto;width:100%;}
+.hero-tag{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-h);font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;}
+.hero-tag::before{content:"";width:28px;height:2px;background:var(--gold);border-radius:2px;display:inline-block;}
+.hero h1{color:#fff;max-width:820px;margin-bottom:1.4rem;}
+.hero h1 em{color:var(--primary);font-style:italic;}
+.hero-sub{font-size:1.1rem;color:rgba(255,255,255,.75);max-width:560px;margin-bottom:2.2rem;line-height:1.75;font-weight:300;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem;}
+.hero-stats{display:flex;gap:2.5rem;flex-wrap:wrap;}
+.stat-num{font-family:var(--font-h);font-size:2rem;font-weight:900;color:#fff;line-height:1;}
+.stat-lbl{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:.15rem;}
+.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;font-family:var(--font-h);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);}
+.scroll-cue::after{content:"";width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,77,0,.7),transparent);animation:sp 2s ease-in-out infinite;}
+@keyframes sp{0%,100%{opacity:0;transform:scaleY(.3);}50%{opacity:1;transform:scaleY(1);}}
+
+/* FEATURES BAR */
+.feat-bar{background:var(--primary);}
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+.feat-item{padding:1.8rem 1.5rem;border-right:1px solid rgba(255,255,255,.15);display:flex;align-items:flex-start;gap:.9rem;}
+.feat-item:last-child{border-right:none;}
+.feat-icon{font-size:1.7rem;flex-shrink:0;}
+.feat-item h4{font-family:var(--font-h);font-size:.88rem;font-weight:700;color:#fff;margin-bottom:.15rem;}
+.feat-item p{font-size:.78rem;color:rgba(255,255,255,.68);line-height:1.5;}
+
+/* CAT TABS */
+.cat-bar{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:72px;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+.cat-inner{display:flex;align-items:center;padding:0 24px;max-width:1200px;margin:0 auto;overflow-x:auto;scrollbar-width:none;}
+.cat-inner::-webkit-scrollbar{display:none;}
+.cat-btn{font-family:var(--font-h);font-size:.77rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.95rem 1.3rem;border:none;background:none;cursor:pointer;color:var(--light);border-bottom:3px solid transparent;transition:all var(--tr);white-space:nowrap;}
+.cat-btn:hover{color:var(--accent);}
+.cat-btn.active{color:var(--primary);border-bottom-color:var(--primary);}
+
+/* TOUR CARDS */
+.tours-panel{display:none;}
+.tours-panel.active{display:block;}
+.tours-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:1.5rem;}
+.tc-card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--tr),box-shadow var(--tr);cursor:pointer;border:1px solid var(--border);}
+.tc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.tc-media{position:relative;height:205px;overflow:hidden;}
+.tc-bg{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .5s ease;}
+.tc-card:hover .tc-bg{transform:scale(1.06);}
+.tc-badge{position:absolute;top:12px;left:12px;font-family:var(--font-h);font-size:.64rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .75rem;border-radius:var(--rp);}
+.b-africa{background:var(--primary);color:#fff;}
+.b-nepal{background:var(--sky);color:#fff;}
+.b-phil{background:var(--leaf);color:#fff;}
+.b-multi{background:var(--secondary);color:#fff;}
+.b-group{background:var(--accent);color:#fff;}
+.tc-dur{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,.62);color:#fff;font-family:var(--font-h);font-size:.68rem;font-weight:600;padding:.28rem .65rem;border-radius:var(--rp);backdrop-filter:blur(4px);}
+.tc-body{padding:1.2rem 1.35rem 1.4rem;}
+.tc-body h3{font-size:1.05rem;font-weight:800;color:var(--accent);margin-bottom:.3rem;}
+.tc-body p{font-size:.84rem;color:var(--text);line-height:1.6;margin-bottom:.85rem;}
+.tc-metas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:.9rem;}
+.tc-meta{font-size:.72rem;color:var(--light);font-weight:500;}
+.tc-meta strong{color:var(--accent);}
+.tc-price-row{display:flex;align-items:center;justify-content:space-between;padding-top:.85rem;border-top:1px solid var(--border);}
+.tc-price{font-family:var(--font-h);font-size:1.3rem;font-weight:900;color:var(--primary);}
+.tc-price small{font-family:var(--font-b);font-size:.68rem;font-weight:400;color:var(--light);display:block;line-height:1;}
+.tc-book{font-family:var(--font-h);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--primary);color:#fff;border:none;padding:.5rem 1.1rem;border-radius:var(--rp);cursor:pointer;transition:all var(--tr);}
+.tc-book:hover{background:var(--primary-h);transform:translateY(-1px);}
+
+/* DESTINATIONS */
+.dest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.dest-card{border-radius:var(--r);overflow:hidden;position:relative;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;}
+.dest-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s ease;}
+.dest-card:hover .dest-bg{transform:scale(1.05);}
+.dest-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(13,8,3,.9) 0%,rgba(13,8,3,.25) 55%,transparent 100%);}
+.dest-body{position:relative;z-index:1;padding:1.8rem;}
+.dest-rgn{font-family:var(--font-h);font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.35rem;}
+.dest-card h3{font-size:1.65rem;color:#fff;margin-bottom:.65rem;}
+.dest-card p{font-size:.83rem;color:rgba(255,255,255,.7);line-height:1.65;margin-bottom:1rem;}
+.dest-tags{display:flex;flex-wrap:wrap;gap:.35rem;}
+.dest-tag{font-family:var(--font-h);font-size:.63rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(255,255,255,.32);color:rgba(255,255,255,.8);padding:.22rem .6rem;border-radius:var(--rp);}
+
+/* SAFARI GRID */
+.safari-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08);}
+.safari-item{padding:2rem 2.2rem;background:rgba(255,255,255,.03);transition:background var(--tr);}
+.safari-item:hover{background:rgba(255,255,255,.07);}
+.safari-item h4{font-family:var(--font-h);font-size:1rem;font-weight:700;color:var(--gold);margin-bottom:.5rem;}
+.safari-item p{font-size:.86rem;color:rgba(255,255,255,.58);line-height:1.72;}
+
+/* VOLUNTEER */
+.vol-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.vol-list{list-style:none;}
+.vol-list li{display:flex;align-items:flex-start;gap:.75rem;padding:.85rem 0;border-bottom:1px solid var(--border);font-size:.91rem;}
+.vol-list li::before{content:"→";color:var(--primary);flex-shrink:0;font-weight:700;margin-top:.05rem;}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.3rem;}
+.chip{background:var(--secondary);color:#fff;font-family:var(--font-h);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.5rem 1rem;border-radius:var(--rp);}
+
+/* SDGs */
+.sdg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:1.2rem;}
+.sdg-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:1.5rem 1.3rem;transition:all var(--tr);border-top:3px solid var(--border);}
+.sdg-card:hover{border-top-color:var(--primary);box-shadow:var(--shadow);}
+.sdg-num{font-family:var(--font-h);font-size:2.4rem;font-weight:900;color:var(--primary);line-height:1;margin-bottom:.45rem;}
+.sdg-card h4{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:.35rem;}
+.sdg-card p{font-size:.81rem;color:var(--text);line-height:1.65;}
+
+/* PARTNER */
+.partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.partner-badge{display:inline-block;background:var(--secondary);color:var(--gold);font-family:var(--font-h);font-size:2.1rem;font-weight:900;padding:2rem 2.6rem;border-radius:var(--r);text-align:center;box-shadow:8px 8px 0 var(--primary);}
+.partner-sub{font-family:var(--font-h);font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-top:1.1rem;}
+
+/* IMPACT */
+.impact-bar{background:var(--primary);padding:48px 0;}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;}
+.impact-item{padding:1.5rem 1rem;border-right:1px solid rgba(255,255,255,.18);}
+.impact-item:last-child{border-right:none;}
+.impact-num{font-family:var(--font-h);font-size:clamp(2.2rem,4vw,3.5rem);font-weight:900;color:#fff;line-height:1;margin-bottom:.25rem;}
+.impact-lbl{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);}
+
+/* CTA */
+.cta-band{padding:80px 24px;text-align:center;background:linear-gradient(135deg,var(--secondary) 0%,#2a1205 100%);}
+.cta-band h2{color:#fff;margin-bottom:.9rem;}
+.cta-band p{color:rgba(255,255,255,.6);max-width:500px;margin:0 auto 2.5rem;font-size:1rem;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+
+/* FOOTER */
+.site-footer{background:var(--accent);color:rgba(255,255,255,.45);padding:56px 0 0;}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;padding:0 24px;max-width:1200px;margin:0 auto;}
+.foot-brand .nav-logo{color:#fff;display:inline-block;margin-bottom:.9rem;}
+.foot-brand p{font-size:.84rem;line-height:1.75;max-width:255px;}
+.foot-email{display:inline-block;margin-top:.75rem;color:var(--gold);font-size:.84rem;}
+.foot-col h5{font-family:var(--font-h);font-size:.66rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.9rem;}
+.foot-col ul{list-style:none;}
+.foot-col ul li{margin-bottom:.45rem;}
+.foot-col ul a{font-size:.86rem;color:rgba(255,255,255,.45);transition:color var(--tr);}
+.foot-col ul a:hover{color:var(--primary);}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.07);margin-top:3rem;padding:1.4rem 24px;display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin-left:auto;margin-right:auto;flex-wrap:wrap;gap:1rem;}
+.foot-bottom p,.foot-bottom a{font-size:.76rem;color:rgba(255,255,255,.28);}
+.foot-bottom a:hover{color:var(--primary);}
+.foot-links{display:flex;gap:1.4rem;}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:1rem;}
+.modal-overlay.open{display:flex;}
+.modal{background:#fff;border-radius:var(--r);width:100%;max-width:700px;max-height:92vh;overflow-y:auto;box-shadow:0 24px 80px rgba(0,0,0,.25);}
+.modal-head{background:var(--secondary);padding:1.6rem 2rem;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;position:sticky;top:0;z-index:10;}
+.modal-head h3{font-family:var(--font-h);font-size:1.2rem;font-weight:800;color:#fff;}
+.modal-head p{font-size:.8rem;color:rgba(255,255,255,.55);margin-top:.2rem;}
+.modal-close{background:rgba(255,255,255,.15);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;flex-shrink:0;transition:background var(--tr);display:flex;align-items:center;justify-content:center;}
+.modal-close:hover{background:rgba(255,255,255,.3);}
+.modal-body{padding:1.8rem 2rem;}
+.summ-bar{background:var(--bg-light);border-radius:var(--rs);padding:1rem 1.2rem;margin-bottom:1.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;border-left:4px solid var(--primary);}
+.summ-name{font-family:var(--font-h);font-weight:700;color:var(--accent);font-size:.93rem;}
+.summ-note{font-size:.76rem;color:var(--light);margin-top:.1rem;}
+.summ-price{font-family:var(--font-h);font-size:1.5rem;font-weight:900;color:var(--primary);}
+
+/* FORM */
+.flbl{font-family:var(--font-h);font-size:.67rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--primary);margin-bottom:.85rem;margin-top:1.5rem;display:block;}
+.flbl:first-child{margin-top:0;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.frow.full{grid-template-columns:1fr;}
+.fg{display:flex;flex-direction:column;gap:.28rem;}
+.fg label{font-size:.75rem;font-weight:600;color:var(--accent);}
+.fg input,.fg select,.fg textarea{font-family:var(--font-b);font-size:.89rem;color:var(--accent);background:#fff;border:1.5px solid var(--border);border-radius:var(--rs);padding:.68rem .88rem;width:100%;outline:none;transition:border-color var(--tr),box-shadow var(--tr);}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(255,77,0,.1);}
+.fg textarea{resize:vertical;min-height:72px;}
+.ferr{border-color:#e53e3e!important;}
+.card-row{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;margin-bottom:1rem;}
+.card-badges{display:flex;gap:.4rem;margin-bottom:.65rem;flex-wrap:wrap;}
+.card-badge{border:1.5px solid var(--border);border-radius:4px;padding:.18rem .52rem;font-size:.67rem;font-weight:700;color:var(--light);}
+.card-badge.visa{color:#1a1f71;}.card-badge.mc{color:#eb001b;}.card-badge.amex{color:#007bc1;}
+.secure-row{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;background:#f0f7f0;border:1px solid #c3dfc3;border-radius:var(--rs);padding:.75rem 1rem;margin-top:.5rem;}
+.secure-item{font-size:.71rem;color:var(--leaf);font-weight:600;}
+.secure-item::before{content:"🔒 ";}
+.pay-btn{width:100%;padding:1rem;background:var(--primary);color:#fff;border:none;border-radius:var(--rp);cursor:pointer;font-family:var(--font-h);font-size:.88rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;transition:all var(--tr);margin-top:1.4rem;}
+.pay-btn:hover{background:var(--primary-h);transform:translateY(-1px);}
+.pay-btn:disabled{background:var(--light);cursor:not-allowed;transform:none;}
+.terms-note{font-size:.73rem;color:var(--light);text-align:center;margin-top:.85rem;line-height:1.65;}
+.terms-note a{color:var(--primary);}
+
+/* SUCCESS */
+.book-success{display:none;text-align:center;padding:3rem 1.5rem;}
+.success-circle{width:72px;height:72px;border-radius:50%;background:rgba(45,106,63,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:2rem;}
+.success-title{font-family:var(--font-h);font-size:1.65rem;font-weight:800;color:var(--leaf);margin-bottom:.5rem;}
+.success-body{font-size:.9rem;color:var(--text);line-height:1.75;}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .feat-grid{grid-template-columns:repeat(2,1fr);}
+  .feat-item:nth-child(2){border-right:none;}
+  .dest-grid{grid-template-columns:1fr 1fr;}
+  .impact-grid{grid-template-columns:repeat(2,1fr);}
+  .impact-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.15);}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+  .partner-grid,.vol-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .safari-grid{grid-template-columns:1fr;}
+}
+@media(max-width:768px){
+  .nav-list{display:none;}
+  .nav-burger{display:flex;}
+  .nav-list.open{display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:#fff;padding:1.4rem;gap:.2rem;z-index:899;box-shadow:0 8px 24px rgba(0,0,0,.1);}
+  .nav-list.open .nav-link{color:var(--accent);padding:.7rem 1rem;}
+  .section{padding:52px 0;}
+  .dest-grid{grid-template-columns:1fr;}
+  .tours-grid{grid-template-columns:1fr;}
+  .feat-grid{grid-template-columns:1fr;}
+  .feat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.15);}
+  .foot-grid{grid-template-columns:1fr;}
+  .frow{grid-template-columns:1fr;}
+  .card-row{grid-template-columns:1fr 1fr;}
+  .card-row .fg:first-child{grid-column:1/-1;}
+  .modal-body{padding:1.2rem;}
+  .hero h1{font-size:2.3rem;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Unique<span>Gap</span>Years</a>
+    <ul class="nav-list" id="navList">
+      <li><a href="#tours" class="nav-link" onclick="closeNav()">Tours</a></li>
+      <li><a href="nepal_student_adventures.html" class="nav-link" onclick="closeNav()">Nepal</a></li>
+      <li><a href="#destinations" class="nav-link" onclick="closeNav()">Destinations</a></li>
+      <li><a href="#volunteer" class="nav-link" onclick="closeNav()">Volunteer</a></li>
+      <li><a href="#impact" class="nav-link" onclick="closeNav()">Impact</a></li>
+      <li><a href="#contact" class="nav-link" onclick="closeNav()">Contact</a></li>
+      <li><a href="#tours" class="nav-link nav-cta" onclick="closeNav()">Book Now</a></li>
+    </ul>
+    <div class="nav-burger" id="burger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Est. 2026 &nbsp;·&nbsp; Germany / Estonia / Nepal</div>
+    <h1>Three Countries.<br><em>One Incredible</em><br>Journey.</h1>
+    <p class="hero-sub">Authentic gap years, school expeditions, guided solo adventures, group tours, and over-50s programmes across Southern Africa, Nepal, and the Philippines.</p>
+    <div class="hero-btns">
+      <a href="#tours" class="btn btn-primary">Browse 50 Programmes</a>
+      <a href="mailto:jack.anderson@uniquegapyears.com" class="btn btn-outline-w">Email Jack</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">50</div><div class="stat-lbl">Programmes</div></div>
+      <div><div class="stat-num">7</div><div class="stat-lbl">Countries</div></div>
+      <div><div class="stat-num">5</div><div class="stat-lbl">Travel Styles</div></div>
+      <div><div class="stat-num">7</div><div class="stat-lbl">UN SDGs</div></div>
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<div class="feat-bar">
+  <div class="feat-grid">
+    <div class="feat-item"><div class="feat-icon">🌍</div><div><h4>Safari & Wildlife</h4><p>Big Five, Vic Falls &amp; the Zambezi</p></div></div>
+    <div class="feat-item"><div class="feat-icon">🏫</div><div><h4>Volunteer &amp; Teach</h4><p>English, mentoring &amp; conservation</p></div></div>
+    <div class="feat-item"><div class="feat-icon">🏔️</div><div><h4>Trek &amp; Adventure</h4><p>Himalayas, islands &amp; wilderness</p></div></div>
+    <div class="feat-item"><div class="feat-icon">🤝</div><div><h4>Cultural Exchange</h4><p>Homestays, au pair &amp; immersion</p></div></div>
+  </div>
+</div>
+
+<!-- TOURS SECTION -->
+<section class="section section--light" id="tours">
+  <div class="container">
+    <span class="eyebrow">50 Handcrafted Programmes</span>
+    <h2>Find Your <em style="color:var(--primary);font-style:italic;">Perfect</em> Tour</h2>
+    <p class="lead">Choose your travel style below. Every programme includes in-country support, pre-departure briefing, and 24/7 emergency contact.</p>
+  </div>
+  <div class="cat-bar">
+    <div class="cat-inner">
+      <button class="cat-btn active" onclick="switchTab('gap',this)">🎒 Gap Year</button>
+      <button class="cat-btn" onclick="switchTab('school',this)">🏫 School Trips</button>
+      <button class="cat-btn" onclick="switchTab('over50',this)">✨ Over 50s</button>
+      <button class="cat-btn" onclick="switchTab('group',this)">👥 Group Tours</button>
+      <button class="cat-btn" onclick="switchTab('solo',this)">🧭 Solo with Guide</button>
+    </div>
+  </div>
+  <div class="container" style="padding-top:2.5rem;">
+
+    <!-- GAP YEAR -->
+    <div class="tours-panel active" id="panel-gap">
+      <div class="tours-grid">
+        <div class="tc-card" onclick="openModal('Classic African Gap Year','Southern Africa · 12 weeks','€2,990','€500')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Southern Africa</span><span class="tc-dur">⏱ 12 weeks</span></div><div class="tc-body"><h3>Classic African Gap Year</h3><p>Volunteer teaching, safari and cultural homestay across Zimbabwe, Zambia and South Africa.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>3 countries</strong></span><span class="tc-meta">🏠 <strong>Homestay incl.</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,990</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Himalayan Gap Adventure','Nepal · 8 weeks','€1,890','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-nepal">Nepal</span><span class="tc-dur">⏱ 8 weeks</span></div><div class="tc-body"><h3>Himalayan Gap Adventure</h3><p>Trek the Annapurna circuit, volunteer in a mountain school, and immerse yourself in Nepali culture.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Nepal</strong></span><span class="tc-meta">🥾 <strong>Guided trek</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,890</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Philippines Island Gap Year','Philippines · 10 weeks','€2,190','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-phil">Philippines</span><span class="tc-dur">⏱ 10 weeks</span></div><div class="tc-body"><h3>Philippines Island Gap Year</h3><p>Community work, island exploration and language learning across the Philippine archipelago.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Philippines</strong></span><span class="tc-meta">🏝 <strong>Island-hop</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,190</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Ultimate Three-Country Gap Year','Africa · Nepal · Philippines · 6 months','€5,490','€750')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-multi">3 Countries</span><span class="tc-dur">⏱ 6 months</span></div><div class="tc-body"><h3>Ultimate Three-Country Gap Year</h3><p>The full Unique Gap Years experience — Southern Africa, Nepal and the Philippines in one epic journey.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>3 regions</strong></span><span class="tc-meta">🌍 <strong>Full year option</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€5,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Zambia Volunteer & Zambezi','Zambia · 6 weeks','€1,490','€300')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Zambia</span><span class="tc-dur">⏱ 6 weeks</span></div><div class="tc-body"><h3>Zambia Volunteer &amp; Zambezi</h3><p>Teach English in rural Zambia then unwind on a Zambezi sunset cruise and Livingstone visit.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Zambia</strong></span><span class="tc-meta">🏫 <strong>Teaching</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Zimbabwe Teaching & Vic Falls','Zimbabwe · 6 weeks','€1,390','€300')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Zimbabwe</span><span class="tc-dur">⏱ 6 weeks</span></div><div class="tc-body"><h3>Zimbabwe Teaching &amp; Vic Falls</h3><p>Teach in a Harare school for six weeks then explore the awe-inspiring Victoria Falls up close.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Zimbabwe</strong></span><span class="tc-meta">🏫 <strong>Teaching</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,390</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('South Africa Immersion','South Africa · 8 weeks','€1,990','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1604537466608-109fa2f16c3b?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">South Africa</span><span class="tc-dur">⏱ 8 weeks</span></div><div class="tc-body"><h3>South Africa Immersion</h3><p>Soweto township tours, Kruger safari, Garden Route adventure and volunteer work in Cape Town.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>South Africa</strong></span><span class="tc-meta">🦁 <strong>Big Five</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,990</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Kenya Conservation Gap Year','Kenya · 10 weeks','€2,490','€450')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1534476478164-b15fec4f091c?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Kenya</span><span class="tc-dur">⏱ 10 weeks</span></div><div class="tc-body"><h3>Kenya Conservation Gap Year</h3><p>Wildlife conservation in the Masai Mara, English teaching in Nairobi, and coastal exploration.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Kenya</strong></span><span class="tc-meta">🐘 <strong>Conservation</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Au Pair Placement Package','Zambia / South Africa · 3–12 months','€650','€150')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Au Pair</span><span class="tc-dur">⏱ 3–12 months</span></div><div class="tc-body"><h3>Au Pair Placement Package</h3><p>Matched placement with a host family in Zambia or South Africa, with full pre-departure support.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Flexible</strong></span><span class="tc-meta">🏠 <strong>Host family</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€650</span><small class="tc-price">placement fee</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Botswana Wilderness & Teach','Botswana · 8 weeks','€2,190','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1551730459-92db2a308d6a?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Botswana</span><span class="tc-dur">⏱ 8 weeks</span></div><div class="tc-body"><h3>Botswana Wilderness &amp; Teach</h3><p>Volunteer in rural schools then explore the Okavango Delta and Chobe on an unforgettable safari.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Botswana</strong></span><span class="tc-meta">🐊 <strong>Okavango</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,190</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+      </div>
+    </div>
+
+    <!-- SCHOOL TRIPS -->
+    <div class="tours-panel" id="panel-school">
+      <div class="tours-grid">
+        <div class="tc-card" onclick="openModal('Southern Africa Schools Safari','Zimbabwe · Zambia · SA · 14 days','€2,490','€500')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">School Trip</span><span class="tc-dur">⏱ 14 days</span></div><div class="tc-body"><h3>Southern Africa Schools Safari</h3><p>Curriculum-linked safari and cultural programme for secondary schools — wildlife, history and community.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>3 countries</strong></span><span class="tc-meta">📚 <strong>Curriculum-linked</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,490</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Nepal Schools Trekking Expedition','Nepal · 12 days','€1,690','€350')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-nepal">School Trip</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Nepal Schools Trekking Expedition</h3><p>A safe, guided Himalayan trek for school groups with a volunteer day in a mountain community school.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Nepal</strong></span><span class="tc-meta">🥾 <strong>Guided trek</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,690</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Zimbabwe Schools Build & Teach','Zimbabwe · 10 days','€1,490','€300')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">School Trip</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Zimbabwe Schools Build &amp; Teach</h3><p>Students help build a classroom and run sports sessions — hands-on, meaningful community impact.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Zimbabwe</strong></span><span class="tc-meta">🏗 <strong>Build project</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,490</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('South Africa History & Heritage','South Africa · 10 days','€1,890','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1604537466608-109fa2f16c3b?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">School Trip</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>South Africa History &amp; Heritage</h3><p>Apartheid history, Robben Island, Soweto and the Cape — a powerful history and geography trip.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>South Africa</strong></span><span class="tc-meta">🏛 <strong>History focus</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,890</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Kenya Wildlife & Science Expedition','Kenya · 12 days','€2,190','€450')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1534476478164-b15fec4f091c?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">School Trip</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Kenya Wildlife &amp; Science Expedition</h3><p>Conservation science, Masai Mara game drives, and a meeting with Maasai community leaders.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Kenya</strong></span><span class="tc-meta">🔬 <strong>Science focus</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,190</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Zambia Victoria Falls Schools Tour','Zambia · 7 days','€1,190','€250')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">School Trip</span><span class="tc-dur">⏱ 7 days</span></div><div class="tc-body"><h3>Zambia Victoria Falls Schools Tour</h3><p>A compact, impactful introduction — Victoria Falls, a village homestay, and a local school visit.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Zambia</strong></span><span class="tc-meta">💧 <strong>Vic Falls</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,190</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Philippines Community Schools Project','Philippines · 10 days','€1,590','€300')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-phil">School Trip</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Philippines Community Schools Project</h3><p>Run arts, sports and English workshops in a Philippine community school — deeply rewarding.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Philippines</strong></span><span class="tc-meta">🎨 <strong>Arts &amp; sports</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,590</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Botswana Ecology Field Study','Botswana · 10 days','€2,090','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1551730459-92db2a308d6a?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">School Trip</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Botswana Ecology Field Study</h3><p>Hands-on ecology fieldwork in the Okavango Delta with expert naturalist guides — ideal for biology.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Botswana</strong></span><span class="tc-meta">🌿 <strong>Ecology</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,090</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Eswatini & Lesotho Cultural Exchange','Eswatini · Lesotho · 8 days','€1,390','€280')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">School Trip</span><span class="tc-dur">⏱ 8 days</span></div><div class="tc-body"><h3>Eswatini &amp; Lesotho Cultural Exchange</h3><p>Two mountain kingdoms — traditional ceremonies, craft workshops, and cross-cultural dialogue.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>2 kingdoms</strong></span><span class="tc-meta">🎭 <strong>Culture</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,390</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Multi-Country Schools Expedition','Africa · Nepal · 21 days','€3,490','€600')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-multi">Multi-Country</span><span class="tc-dur">⏱ 21 days</span></div><div class="tc-body"><h3>Multi-Country Schools Expedition</h3><p>An ambitious schools programme combining Africa safari, community work and Nepal trekking.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>2 regions</strong></span><span class="tc-meta">🌍 <strong>Cross-continental</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,490</span><small class="tc-price">per student</small></div><button class="tc-book">Enquire</button></div></div></div>
+      </div>
+    </div>
+
+    <!-- OVER 50s -->
+    <div class="tours-panel" id="panel-over50">
+      <div class="tours-grid">
+        <div class="tc-card" onclick="openModal('Classic Southern Africa Safari','SA · Zimbabwe · Zambia · 14 days','€3,990','€700')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Over 50s</span><span class="tc-dur">⏱ 14 days</span></div><div class="tc-body"><h3>Classic Southern Africa Safari</h3><p>A carefully paced luxury safari covering the Golden Triangle — tailored comfort for over-50s.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>3 countries</strong></span><span class="tc-meta">⭐ <strong>Luxury lodges</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,990</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Nepal Foothills & Culture Walk','Nepal · 12 days','€2,490','€500')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-nepal">Over 50s</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Nepal Foothills &amp; Culture Walk</h3><p>Gentle foothills walks, monastery visits, cooking classes and a boutique Kathmandu hotel stay.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Nepal</strong></span><span class="tc-meta">🧘 <strong>Relaxed pace</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Kruger & Cape Luxury Tour','South Africa · 12 days','€4,490','€800')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1604537466608-109fa2f16c3b?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Over 50s</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Kruger &amp; Cape Luxury Tour</h3><p>Private game drives in Kruger, wine tasting in Stellenbosch, and a Table Mountain sunset in Cape Town.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>South Africa</strong></span><span class="tc-meta">🍷 <strong>Wine &amp; wildlife</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€4,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Victoria Falls & Botswana Explorer','Zimbabwe · Botswana · 10 days','€3,490','€650')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Over 50s</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Victoria Falls &amp; Botswana Explorer</h3><p>Helicopter over the Falls, a luxury Chobe boat safari, and sundowners on the Zambezi River.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>2 countries</strong></span><span class="tc-meta">🚁 <strong>Helicopter option</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Kenya Safari & Maasai Culture','Kenya · 10 days','€3,290','€600')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1534476478164-b15fec4f091c?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Over 50s</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Kenya Safari &amp; Maasai Culture</h3><p>Game drives in the Masai Mara, a guided Maasai village visit, and Great Rift Valley viewpoints.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Kenya</strong></span><span class="tc-meta">🦒 <strong>Masai Mara</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,290</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Philippines Island Relaxation Tour','Philippines · 12 days','€2,890','€550')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-phil">Over 50s</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Philippines Island Relaxation Tour</h3><p>Pristine beaches, island-hopping, Filipino cooking classes and a coral reef snorkel — total relaxation.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Philippines</strong></span><span class="tc-meta">🌊 <strong>Beach &amp; snorkel</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,890</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Garden Route Scenic Drive','South Africa · 10 days','€2,790','€550')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Over 50s</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Garden Route Scenic Drive</h3><p>Private vehicle along the Garden Route — Knysna, Tsitsikamma, whale-watching and oyster tasting.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>South Africa</strong></span><span class="tc-meta">🐋 <strong>Whale watching</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,790</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Zambia River Lodge Retreat','Zambia · 8 days','€3,190','€600')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Over 50s</span><span class="tc-dur">⏱ 8 days</span></div><div class="tc-body"><h3>Zambia River Lodge Retreat</h3><p>Riverside lodge on the Zambezi, guided game walks, birding, and a Victoria Falls visit.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Zambia</strong></span><span class="tc-meta">🏡 <strong>Lodge stay</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,190</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Eswatini & Lesotho Kingdoms Tour','Eswatini · Lesotho · 8 days','€2,490','€500')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1551730459-92db2a308d6a?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Over 50s</span><span class="tc-dur">⏱ 8 days</span></div><div class="tc-body"><h3>Eswatini &amp; Lesotho Kingdoms Tour</h3><p>Two mountain kingdoms at a relaxed pace — royal ceremonies, highland drives and craft markets.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>2 kingdoms</strong></span><span class="tc-meta">👑 <strong>Royal culture</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Grand Africa Journey','SA · Kenya · Botswana · 21 days','€6,990','€1,000')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-multi">Over 50s</span><span class="tc-dur">⏱ 21 days</span></div><div class="tc-body"><h3>Grand Africa Journey</h3><p>The ultimate over-50s bucket-list journey across three iconic African countries in first-class comfort.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>3 countries</strong></span><span class="tc-meta">⭐ <strong>First class</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€6,990</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+      </div>
+    </div>
+
+    <!-- GROUP TOURS -->
+    <div class="tours-panel" id="panel-group">
+      <div class="tours-grid">
+        <div class="tc-card" onclick="openModal('Golden Triangle Group Safari','Zimbabwe · Zambia · Botswana · 10 days','€1,990','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-group">Group</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Golden Triangle Group Safari</h3><p>Group safari covering Victoria Falls, Chobe and the Zambezi — great value for groups of 8–16.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>3 countries</strong></span><span class="tc-meta">👥 <strong>8–16 people</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,990</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Nepal Group Trek & Village Stay','Nepal · 14 days','€1,590','€350')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-nepal">Group</span><span class="tc-dur">⏱ 14 days</span></div><div class="tc-body"><h3>Nepal Group Trek &amp; Village Stay</h3><p>Trek the Annapurna Foothills, stay in a teahouse village, and visit a local monastery together.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Nepal</strong></span><span class="tc-meta">🛖 <strong>Teahouse stay</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,590</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('South Africa Group Highlights','South Africa · 10 days','€1,890','€400')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1604537466608-109fa2f16c3b?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Group</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>South Africa Group Highlights</h3><p>Kruger safari, Cape Town highlights, Soweto cultural tour and Garden Route — all in one trip.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>South Africa</strong></span><span class="tc-meta">🦁 <strong>Big Five</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,890</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Philippines Group Island Hopper','Philippines · 12 days','€1,790','€350')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-phil">Group</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Philippines Group Island Hopper</h3><p>Palawan, Cebu and Bohol with like-minded travellers — snorkelling, culture and tropical beaches.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Philippines</strong></span><span class="tc-meta">🤿 <strong>Snorkelling</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,790</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Kenya Group Safari & Beach','Kenya · 12 days','€2,290','€450')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1534476478164-b15fec4f091c?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Group</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Kenya Group Safari &amp; Beach</h3><p>Masai Mara game drives with the group, then relax on the Kenyan coast at Diani Beach.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Kenya</strong></span><span class="tc-meta">🏖 <strong>Beach finish</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,290</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Group Volunteer Project','Zimbabwe · Zambia · 3 weeks','€1,290','€300')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Group</span><span class="tc-dur">⏱ 3 weeks</span></div><div class="tc-body"><h3>Group Volunteer Project</h3><p>Group volunteer programme — teaching and community building projects with genuine team spirit.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Zimbabwe/Zambia</strong></span><span class="tc-meta">🏫 <strong>Volunteer</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,290</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Botswana Okavango Group Expedition','Botswana · 8 days','€2,590','€500')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1551730459-92db2a308d6a?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Group</span><span class="tc-dur">⏱ 8 days</span></div><div class="tc-body"><h3>Botswana Okavango Group Expedition</h3><p>Explore the Okavango Delta by mokoro canoe, on foot and by 4x4 — an incredible group adventure.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Botswana</strong></span><span class="tc-meta">🛶 <strong>Mokoro canoe</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,590</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Africa & Asia Group Adventure','Southern Africa · Nepal · 3 weeks','€3,490','€600')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-multi">Group</span><span class="tc-dur">⏱ 3 weeks</span></div><div class="tc-body"><h3>Africa &amp; Asia Group Adventure</h3><p>An epic dual-continent group adventure — Golden Triangle safari followed by a Nepal foothills trek.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>2 continents</strong></span><span class="tc-meta">🌏 <strong>Epic combo</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,490</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Zimbabwe & Zambia Group Homestay','Zimbabwe · Zambia · 10 days','€1,390','€300')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Group</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Zimbabwe &amp; Zambia Group Homestay</h3><p>Stay with local families in two countries — share meals, stories and everyday life with genuine warmth.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>2 countries</strong></span><span class="tc-meta">🏠 <strong>Homestay</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,390</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Festive Season Group Safari','Southern Africa · 14 days','€2,990','€550')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-group">Group</span><span class="tc-dur">⏱ 14 days</span></div><div class="tc-body"><h3>Festive Season Group Safari</h3><p>A special festive-season departure — celebrate New Year under the African stars with a great group.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Southern Africa</strong></span><span class="tc-meta">🎆 <strong>New Year</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,990</span><small class="tc-price">per person</small></div><button class="tc-book">Book Now</button></div></div></div>
+      </div>
+    </div>
+
+    <!-- SOLO WITH GUIDE -->
+    <div class="tours-panel" id="panel-solo">
+      <div class="tours-grid">
+        <div class="tc-card" onclick="openModal('Solo Safari Expedition','SA · Zimbabwe · Zambia · 12 days','€3,290','€600')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Solo</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Solo Safari Expedition</h3><p>A private guided safari across three countries — your pace, your interests, your expert guide.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>3 countries</strong></span><span class="tc-meta">🎯 <strong>Private guide</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,290</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo Nepal Trek with Sherpa','Nepal · 14 days','€2,190','€450')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-nepal">Solo</span><span class="tc-dur">⏱ 14 days</span></div><div class="tc-body"><h3>Solo Nepal Trek with Sherpa</h3><p>Private Himalayan trek with an experienced Sherpa — choose Annapurna, Langtang or Everest region.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Nepal</strong></span><span class="tc-meta">🧗 <strong>Sherpa guide</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,190</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo South Africa Highlights','South Africa · 10 days','€2,890','€550')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1604537466608-109fa2f16c3b?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Solo</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Solo South Africa Highlights</h3><p>Cape Town, the Winelands, Kruger and the Garden Route — with a private driver-guide throughout.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>South Africa</strong></span><span class="tc-meta">🚗 <strong>Private driver</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,890</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo Philippines Discovery','Philippines · 12 days','€2,390','€480')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-phil">Solo</span><span class="tc-dur">⏱ 12 days</span></div><div class="tc-body"><h3>Solo Philippines Discovery</h3><p>Island-hop the Philippines with a private local guide — hidden beaches, markets and real Filipino life.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Philippines</strong></span><span class="tc-meta">🗺 <strong>Local guide</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,390</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo Kenya Safari & Culture','Kenya · 10 days','€3,090','€580')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1534476478164-b15fec4f091c?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Solo</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Solo Kenya Safari &amp; Culture</h3><p>Private Masai Mara game drives, a Maasai village night, and a Nairobi city tour with a guide.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Kenya</strong></span><span class="tc-meta">🦁 <strong>Masai Mara</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,090</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo Victoria Falls Weekend','Zambia · Zimbabwe · 5 days','€1,490','€300')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Solo</span><span class="tc-dur">⏱ 5 days</span></div><div class="tc-body"><h3>Solo Victoria Falls Weekend</h3><p>An intense solo break — both sides of the Falls, a helicopter flight and a Zambezi sunset cruise.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Zambia/Zimbabwe</strong></span><span class="tc-meta">🚁 <strong>Heli option</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€1,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo Botswana Deep Wild','Botswana · 8 days','€3,490','€650')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1551730459-92db2a308d6a?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Solo</span><span class="tc-dur">⏱ 8 days</span></div><div class="tc-body"><h3>Solo Botswana Deep Wild</h3><p>Wild camping, walking safaris and mokoro canoe trips in the Okavango Delta — private and unforgettable.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Botswana</strong></span><span class="tc-meta">🏕 <strong>Wild camping</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€3,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo Zimbabwe & Eswatini','Zimbabwe · Eswatini · 10 days','€2,490','€480')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Solo</span><span class="tc-dur">⏱ 10 days</span></div><div class="tc-body"><h3>Solo Zimbabwe &amp; Eswatini</h3><p>Harare cultural tour, Vic Falls, and a private journey into the Kingdom of Eswatini with a local guide.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>2 countries</strong></span><span class="tc-meta">🎭 <strong>Culture focus</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€2,490</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Solo Volunteer Placement','Flexible country · 4 weeks','€890','€200')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-africa">Solo</span><span class="tc-dur">⏱ 4 weeks</span></div><div class="tc-body"><h3>Solo Volunteer Placement</h3><p>A solo volunteer placement with full in-country support and a dedicated local coordinator throughout.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Your choice</strong></span><span class="tc-meta">🤝 <strong>Supported</strong></span></div><div class="tc-price-row"><div><span class="tc-price">€890</span><small class="tc-price">+ flights</small></div><button class="tc-book">Book Now</button></div></div></div>
+
+        <div class="tc-card" onclick="openModal('Bespoke Solo Expedition','Your choice · Flexible','POA','POA')"><div class="tc-media"><div class="tc-bg" style="background-image:url('https://images.unsplash.com/photo-1504432842672-1a79f78e4084?w=600&auto=format&fit=crop&q=75')"></div><span class="tc-badge b-multi">Solo</span><span class="tc-dur">⏱ Flexible</span></div><div class="tc-body"><h3>Bespoke Solo Expedition</h3><p>Design your own unique journey with our team — any country, any duration, any focus you like.</p><div class="tc-metas"><span class="tc-meta">📍 <strong>Your choice</strong></span><span class="tc-meta">✏️ <strong>Custom built</strong></span></div><div class="tc-price-row"><div><span class="tc-price" style="font-size:1rem">Price on enquiry</span></div><button class="tc-book">Enquire</button></div></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section" id="destinations">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Our Destinations</span>
+      <h2>Where Will Your Journey Begin?</h2>
+      <p class="lead">Three extraordinary regions, each offering a distinct blend of nature, culture, and opportunity.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card"><div class="dest-bg" style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&auto=format&fit=crop&q=80')"></div><div class="dest-body"><div class="dest-rgn">Sub-Saharan Africa</div><h3>Southern Africa</h3><p>South Africa, Zimbabwe, Zambia, Botswana, Kenya, Eswatini and Lesotho. Safaris, volunteering, and cultural immersion across the continent's most stunning landscapes.</p><div class="dest-tags"><span class="dest-tag">Safari</span><span class="dest-tag">Volunteer</span><span class="dest-tag">Au Pair</span><span class="dest-tag">Homestay</span></div></div></div>
+      <div class="dest-card"><div class="dest-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&auto=format&fit=crop&q=80')"></div><div class="dest-body"><div class="dest-rgn">South Asia</div><h3>Nepal</h3><p>Trek legendary Himalayan trails, volunteer in mountain communities, and experience one of the world's most spiritually rich and welcoming cultures.</p><div class="dest-tags"><span class="dest-tag">Trekking</span><span class="dest-tag">Volunteer</span><span class="dest-tag">Teaching</span></div><a href="nepal_student_adventures.html" style="display:inline-block;margin-top:1rem;font-family:var(--font-h);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--primary);color:#fff;padding:.48rem 1.1rem;border-radius:var(--rp);">Nepal Student Adventures →</a></div></div>
+      <div class="dest-card"><div class="dest-bg" style="background-image:url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=800&auto=format&fit=crop&q=80')"></div><div class="dest-body"><div class="dest-rgn">South-East Asia</div><h3>Philippines</h3><p>Island adventure, community projects, and cultural exchange across one of Asia's most vibrant archipelagos — beaches, reefs, and real connections.</p><div class="dest-tags"><span class="dest-tag">Adventure</span><span class="dest-tag">Community</span><span class="dest-tag">Culture</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOUTHERN AFRICA SPOTLIGHT -->
+<section class="section section--dark">
+  <div class="container">
+    <span class="eyebrow">Southern Africa Highlights</span>
+    <h2>The Golden Triangle &amp; Beyond</h2>
+    <p class="lead">Our Southern Africa programme weaves together the region's greatest natural wonders with authentic local experiences.</p>
+    <div class="safari-grid">
+      <div class="safari-item"><h4>Victoria Falls</h4><p>Witness one of the world's largest waterfalls from both the Zambian and Zimbabwean sides, with optional helicopter rides for a breathtaking aerial perspective.</p></div>
+      <div class="safari-item"><h4>Chobe &amp; Zambezi</h4><p>Boat safaris through Chobe National Park — home to Africa's largest elephant population — and unforgettable sunset cruises on the Zambezi River.</p></div>
+      <div class="safari-item"><h4>Kruger National Park</h4><p>Experience South Africa's iconic wilderness, encounter the Big Five, and taste exotic African cuisine on guided game drives and bush walks.</p></div>
+      <div class="safari-item"><h4>Soweto &amp; Township Culture</h4><p>Guided township tours offering an honest, fascinating window into South African history, resilience, and vibrant contemporary urban life.</p></div>
+      <div class="safari-item"><h4>Garden Route</h4><p>Adventures along South Africa's stunning Garden Route with hostel stays via Bazbus — coastlines, forests, whale-watching and adventure sports.</p></div>
+      <div class="safari-item"><h4>Eswatini &amp; Lesotho</h4><p>Explore two extraordinary mountain kingdoms, each with deep cultural traditions, stunning highland landscapes, wildlife reserves and royal ceremonies.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VOLUNTEER -->
+<section class="section section--light" id="volunteer">
+  <div class="container">
+    <span class="eyebrow">Volunteer &amp; Education</span>
+    <h2>Make Your Time Count</h2>
+    <p class="lead">Our volunteer programmes place you directly where you're needed most — in classrooms, community centres, and care facilities across seven countries.</p>
+    <div class="vol-grid">
+      <div>
+        <ul class="vol-list">
+          <li>Teach English as a foreign language</li>
+          <li>Teach Spanish, Chinese, or Arabic</li>
+          <li>Youth mentoring and leadership coaching</li>
+          <li>Support in orphanages and children's homes</li>
+          <li>Work with people with disabilities</li>
+          <li>Conservation and environmental education</li>
+          <li>Community development projects</li>
+          <li>Cultural exchange and homestay hosting</li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-size:.76rem;font-family:var(--font-h);font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--light);margin-bottom:.9rem;">We operate in</p>
+        <div class="chips">
+          <span class="chip">Zimbabwe</span><span class="chip">Kenya</span><span class="chip">Nepal</span>
+          <span class="chip">Philippines</span><span class="chip">Zambia</span><span class="chip">South Africa</span><span class="chip">Botswana</span>
+        </div>
+        <p style="font-size:.88rem;color:var(--text);margin-top:1.4rem;line-height:1.8;">Placements run from two weeks to a full gap year. All volunteers receive pre-departure briefings, in-country support, and 24/7 emergency contact with Jack and the team.</p>
+        <a href="#tours" class="btn btn-primary" style="margin-top:1.5rem;" onclick="switchTab('gap',null)">View Volunteer Tours</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SDGs -->
+<section class="section" id="impact">
+  <div class="container">
+    <div class="tc">
+      <span class="eyebrow">Sustainable Development</span>
+      <h2>Travel That Gives Back</h2>
+      <p class="lead">Every programme is aligned with UN Sustainable Development Goals. When you travel with us, your journey creates lasting positive impact.</p>
+    </div>
+    <div class="sdg-grid">
+      <div class="sdg-card"><div class="sdg-num">4</div><h4>Quality Education</h4><p>Teaching placements, language programmes, and youth leadership development in underserved communities.</p></div>
+      <div class="sdg-card"><div class="sdg-num">5</div><h4>Gender Equality</h4><p>Supporting women-led tourism businesses and female-led sports coaching programmes.</p></div>
+      <div class="sdg-card"><div class="sdg-num">8</div><h4>Decent Work</h4><p>Local employment, community tourism enterprises, and youth economic opportunity creation.</p></div>
+      <div class="sdg-card"><div class="sdg-num">10</div><h4>Reduced Inequalities</h4><p>Scholarships, rural tourism inclusion, and cultural exchange for all communities.</p></div>
+      <div class="sdg-card"><div class="sdg-num">13</div><h4>Climate Action</h4><p>Carbon offset initiatives, low-impact tourism practices, and environmental education throughout.</p></div>
+      <div class="sdg-card"><div class="sdg-num">15</div><h4>Life on Land</h4><p>Wildlife conservation partnerships, biodiversity awareness, and anti-poaching support.</p></div>
+      <div class="sdg-card"><div class="sdg-num">17</div><h4>Partnerships</h4><p>Collaborations with NGOs, schools, tourism boards and conservation organisations worldwide.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER -->
+<section class="section section--light">
+  <div class="container">
+    <div class="partner-grid">
+      <div>
+        <span class="eyebrow">Our Southern Africa Partner</span>
+        <h2>Powered by ZimZamZa</h2>
+        <p class="lead">Our Southern Africa operations are delivered in partnership with ZimZamZa Adventures &amp; Exchange — specialists in ethical tourism across South Africa, Zimbabwe and Zambia.</p>
+        <p style="font-size:.9rem;color:var(--text);line-height:1.8;margin-bottom:1.5rem;">ZimZamZa brings established networks of host families, local guides, NGO partners, and lodges — ensuring every experience is authentic, safe, and community-rooted. Tagline: <em>"Three Countries. One Incredible Journey."</em></p>
+        <a href="#tours" class="btn btn-primary">Browse All Tours</a>
+      </div>
+      <div style="text-align:center;">
+        <div class="partner-badge">Zim<br>Zam<br>Za</div>
+        <p class="partner-sub">Adventures &amp; Exchange</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT BAR -->
+<div class="impact-bar">
+  <div class="container">
+    <div class="impact-grid">
+      <div class="impact-item"><div class="impact-num">50</div><div class="impact-lbl">Unique Programmes</div></div>
+      <div class="impact-item"><div class="impact-num">7</div><div class="impact-lbl">Countries</div></div>
+      <div class="impact-item"><div class="impact-num">7</div><div class="impact-lbl">UN SDGs Supported</div></div>
+      <div class="impact-item"><div class="impact-num">∞</div><div class="impact-lbl">Ways to Make a Difference</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-band" id="contact">
+  <span class="eyebrow" style="color:var(--gold);">Ready to start?</span>
+  <h2 style="color:#fff;margin-bottom:.9rem;">Your Adventure Starts Here</h2>
+  <p>Browse 50 programmes and book online, or email Jack directly to design a bespoke itinerary.</p>
+  <div class="cta-btns">
+    <a href="#tours" class="btn btn-primary">Browse All 50 Tours</a>
+    <a href="mailto:jack.anderson@uniquegapyears.com" class="btn btn-outline-w">Email jack.anderson@uniquegapyears.com</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a href="#" class="nav-logo">Unique<span>Gap</span>Years</a>
+      <p>One-of-a-kind experiences for curious travellers. HQ Germany / Estonia / Nepal. Est. 2026. In partnership with ZimZamZa Adventures &amp; Exchange.</p>
+      <a href="mailto:jack.anderson@uniquegapyears.com" class="foot-email">jack.anderson@uniquegapyears.com</a>
+    </div>
+    <div class="foot-col">
+      <h5>Tour Types</h5>
+      <ul>
+        <li><a href="#tours" onclick="switchTab('gap',null)">Gap Year</a></li>
+        <li><a href="#tours" onclick="switchTab('school',null)">School Trips</a></li>
+        <li><a href="#tours" onclick="switchTab('over50',null)">Over 50s</a></li>
+        <li><a href="#tours" onclick="switchTab('group',null)">Group Tours</a></li>
+        <li><a href="#tours" onclick="switchTab('solo',null)">Solo with Guide</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Destinations</h5>
+      <ul>
+        <li><a href="#destinations">Southern Africa</a></li>
+        <li><a href="#destinations">Nepal</a></li>
+        <li><a href="#destinations">Philippines</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#impact">Our Impact</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="mailto:jack.anderson@uniquegapyears.com">Contact Jack</a></li>
+        <li><a href="#">ZimZamZa Partnership</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;">
+    <div class="foot-bottom">
+      <p>&copy; 2026 Unique Gap Years. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="mailto:jack.anderson@uniquegapyears.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="overlayClick(event)">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <h3 id="mTitle">Book Your Place</h3>
+        <p id="mMeta"></p>
+      </div>
+      <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+    </div>
+    <div class="modal-body">
+      <div id="formWrap">
+        <div class="summ-bar">
+          <div>
+            <div class="summ-name" id="mSummName"></div>
+            <div class="summ-note" id="mSummNote"></div>
+          </div>
+          <div class="summ-price" id="mSummPrice"></div>
+        </div>
+
+        <span class="flbl">Your Details</span>
+        <div class="frow">
+          <div class="fg"><label>First Name *</label><input type="text" id="fFirst" placeholder="Jane" autocomplete="given-name"></div>
+          <div class="fg"><label>Last Name *</label><input type="text" id="fLast" placeholder="Smith" autocomplete="family-name"></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Email Address *</label><input type="email" id="fEmail" placeholder="jane@example.com" autocomplete="email"></div>
+          <div class="fg"><label>Phone / WhatsApp</label><input type="tel" id="fPhone" placeholder="+49 …" autocomplete="tel"></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Nationality</label><input type="text" id="fNat" placeholder="German"></div>
+          <div class="fg"><label>Preferred Start Date</label><input type="date" id="fDate"></div>
+        </div>
+        <div class="frow full">
+          <div class="fg"><label>Duration</label>
+            <select id="fDur">
+              <option>2 weeks</option><option>4 weeks</option><option>6 weeks</option><option>8 weeks</option>
+              <option>3 months</option><option>6 months</option><option>1 year</option><option>Flexible / TBC</option>
+            </select>
+          </div>
+        </div>
+        <div class="frow full">
+          <div class="fg"><label>Special Requirements or Questions</label><textarea id="fNotes" placeholder="Dietary needs, health info, group size, specific interests…"></textarea></div>
+        </div>
+
+        <span class="flbl">Secure Deposit Payment</span>
+        <div class="card-badges">
+          <span class="card-badge visa">VISA</span>
+          <span class="card-badge mc">MC</span>
+          <span class="card-badge amex">AMEX</span>
+          <span class="card-badge">PayPal</span>
+          <span class="card-badge">Bank Transfer</span>
+        </div>
+        <div class="card-row">
+          <div class="fg"><label>Card Number *</label><input type="text" id="fCard" placeholder="1234 5678 9012 3456" maxlength="19" inputmode="numeric"></div>
+          <div class="fg"><label>Expiry *</label><input type="text" id="fExp" placeholder="MM / YY" maxlength="7"></div>
+          <div class="fg"><label>CVC *</label><input type="text" id="fCvc" placeholder="123" maxlength="4" inputmode="numeric"></div>
+        </div>
+        <div class="frow full">
+          <div class="fg"><label>Name on Card *</label><input type="text" id="fCardName" placeholder="Jane Smith" autocomplete="cc-name"></div>
+        </div>
+        <div class="secure-row">
+          <span class="secure-item">256-bit SSL Encrypted</span>
+          <span class="secure-item">PCI DSS Compliant</span>
+          <span class="secure-item">Secure Checkout</span>
+        </div>
+        <button class="pay-btn" id="payBtn" onclick="submitBooking()">Pay Deposit — <span id="payBtnAmt"></span></button>
+        <p class="terms-note">By booking you agree to our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cancellation Policy</a>.<br>Full refund if cancelled 90+ days before departure. Balance due 8 weeks before travel.</p>
+      </div>
+
+      <!-- SUCCESS -->
+      <div class="book-success" id="bookSuccess">
+        <div class="success-circle">&#x2713;</div>
+        <div class="success-title">Booking Confirmed!</div>
+        <p class="success-body">Your deposit has been received and your place is secured.<br><br>
+        Jack will be in touch at <strong id="successEmail"></strong> within 24 hours with your full joining instructions and itinerary details.<br><br>
+        Welcome to Unique Gap Years.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* NAV */
+window.addEventListener('scroll',()=>{
+  document.getElementById('siteHeader').classList.toggle('scrolled',window.scrollY>60);
+});
+function toggleNav(){document.getElementById('navList').classList.toggle('open');}
+function closeNav(){document.getElementById('navList').classList.remove('open');}
+
+/* TABS */
+const TAB_IDS=['gap','school','over50','group','solo'];
+function switchTab(id,btn){
+  document.querySelectorAll('.tours-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+  const panel=document.getElementById('panel-'+id);
+  if(panel)panel.classList.add('active');
+  if(btn){btn.classList.add('active');}
+  else{
+    const i=TAB_IDS.indexOf(id);
+    if(i>-1)document.querySelectorAll('.cat-btn')[i]?.classList.add('active');
+  }
+  setTimeout(()=>document.getElementById('tours').scrollIntoView({behavior:'smooth',block:'start'}),50);
+}
+
+/* MODAL */
+let cur={};
+function openModal(name,meta,price,deposit){
+  cur={name,meta,price,deposit};
+  const poa=deposit==='POA';
+  document.getElementById('mTitle').textContent=name;
+  document.getElementById('mMeta').textContent=meta;
+  document.getElementById('mSummName').textContent=name;
+  document.getElementById('mSummPrice').textContent=price;
+  document.getElementById('mSummNote').textContent=poa?'Price on enquiry — we will contact you':'Deposit today: '+deposit+' · Balance 8 weeks before travel';
+  document.getElementById('payBtnAmt').textContent=poa?'Send Enquiry':deposit;
+  document.getElementById('payBtn').textContent=(poa?'Send Enquiry':'Pay Deposit — '+deposit);
+  // reset
+  document.getElementById('formWrap').style.display='block';
+  document.getElementById('bookSuccess').style.display='none';
+  document.getElementById('payBtn').disabled=false;
+  ['fFirst','fLast','fEmail','fPhone','fNat','fDate','fNotes','fCard','fExp','fCvc','fCardName'].forEach(id=>{
+    const el=document.getElementById(id);if(el){el.value='';el.classList.remove('ferr');}
+  });
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+function overlayClick(e){if(e.target.id==='modalOverlay')closeModal();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
+/* CARD FORMAT */
+document.getElementById('fCard').addEventListener('input',function(){
+  let v=this.value.replace(/\D/g,'').substring(0,16);
+  this.value=v.replace(/(.{4})/g,'$1 ').trim();
+});
+document.getElementById('fExp').addEventListener('input',function(){
+  let v=this.value.replace(/\D/g,'').substring(0,4);
+  if(v.length>=2)v=v.substring(0,2)+' / '+v.substring(2);
+  this.value=v;
+});
+
+/* SUBMIT */
+function submitBooking(){
+  const poa=cur.deposit==='POA';
+  const req=poa?['fFirst','fLast','fEmail']:['fFirst','fLast','fEmail','fCard','fExp','fCvc','fCardName'];
+  let ok=true;
+  req.forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el||!el.value.trim()){if(el)el.classList.add('ferr');ok=false;}
+    else el.classList.remove('ferr');
+  });
+  if(!ok)return;
+  const btn=document.getElementById('payBtn');
+  btn.disabled=true;btn.textContent='Processing…';
+  const email=document.getElementById('fEmail').value.trim();
+  const payload={
+    _subject:'New Booking: '+cur.name,
+    _replyto:email,
+    tour:cur.name,destination:cur.meta,price:cur.price,deposit:cur.deposit,
+    first_name:document.getElementById('fFirst').value,
+    last_name:document.getElementById('fLast').value,
+    email,phone:document.getElementById('fPhone').value,
+    nationality:document.getElementById('fNat').value,
+    start_date:document.getElementById('fDate').value,
+    duration:document.getElementById('fDur').value,
+    notes:document.getElementById('fNotes').value
+  };
+  fetch('https://formspree.io/f/jack.anderson@uniquegapyears.com',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify(payload)
+  })
+  .then(()=>showSuccess(email))
+  .catch(()=>{
+    // Mailto fallback with all details pre-filled
+    const sub=encodeURIComponent('New Booking: '+cur.name);
+    const body=encodeURIComponent(
+      'BOOKING REQUEST\n===============\n'+
+      'Tour: '+cur.name+'\nDestination: '+cur.meta+'\nPrice: '+cur.price+'\nDeposit: '+cur.deposit+
+      '\n\nTRAVELLER DETAILS\nName: '+payload.first_name+' '+payload.last_name+
+      '\nEmail: '+payload.email+'\nPhone: '+payload.phone+
+      '\nNationality: '+payload.nationality+'\nStart Date: '+payload.start_date+
+      '\nDuration: '+payload.duration+'\nNotes: '+payload.notes
+    );
+    window.location.href='mailto:jack.anderson@uniquegapyears.com?subject='+sub+'&body='+body;
+    showSuccess(email);
+  });
+}
+function showSuccess(email){
+  document.getElementById('successEmail').textContent=email;
+  document.getElementById('formWrap').style.display='none';
+  document.getElementById('bookSuccess').style.display='block';
+}
+</script>
+</body>
+</html>
